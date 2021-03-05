@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tests-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SimulationContextTest",
+	"pools" : [
+		 ],
+	"super" : "SimulationTestCase",
+	"type" : "normal" }

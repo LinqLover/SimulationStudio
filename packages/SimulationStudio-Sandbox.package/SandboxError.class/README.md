@@ -1,0 +1,1 @@
+I represent a SimulationError that has occured during the simulation of a SandboxContext.

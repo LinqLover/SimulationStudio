@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSimulationStudio",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSimulationStudio",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

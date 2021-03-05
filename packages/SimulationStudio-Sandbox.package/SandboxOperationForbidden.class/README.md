@@ -1,0 +1,1 @@
+I am signalled on a stack of simulated SandboxContexts when the simulated code tries to perform an operation that is not permitted.

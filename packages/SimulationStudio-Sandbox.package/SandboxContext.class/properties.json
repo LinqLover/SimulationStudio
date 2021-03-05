@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 3/5/2021 20:11",
+	"instvars" : [
+		"sandbox" ],
+	"name" : "SandboxContext",
+	"pools" : [
+		 ],
+	"super" : "SimulationContext",
+	"type" : "variable" }

@@ -1,0 +1,17 @@
+{
+	"category" : "SimulationStudio-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects",
+		"stepCount",
+		"stepLimit",
+		"hashes" ],
+	"name" : "Sandbox",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

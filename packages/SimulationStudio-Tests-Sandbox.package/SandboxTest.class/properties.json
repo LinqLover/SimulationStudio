@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tests-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SandboxTest",
+	"pools" : [
+		 ],
+	"super" : "SimulationTestCase",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "SimulationStudio-Tracing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"recorder",
+		"currentRecord",
+		"currentReceiver",
+		"currentArguments" ],
+	"name" : "SimulationMsrContext",
+	"pools" : [
+		 ],
+	"super" : "SimulationContext",
+	"type" : "variable" }

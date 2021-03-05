@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"browseRecord:" : "ct 3/3/2021 22:19",
+		"record:" : "ct 3/3/2021 22:20",
+		"todo" : "ct 3/3/2021 22:25" },
+	"instance" : {
+		"initialize" : "ct 3/3/2021 22:09",
+		"record" : "ct 3/3/2021 22:02",
+		"recordSendMethod:receiver:arguments:context:" : "ct 3/3/2021 22:08",
+		"sendBasicMessage:" : "ct 3/5/2021 19:17",
+		"sendMessage" : "ct 3/3/2021 22:15" } }

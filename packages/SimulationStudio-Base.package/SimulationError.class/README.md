@@ -1,0 +1,1 @@
+I represent an Error that has occurred while simulating a CustomContext.

@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 3/5/2021 20:07",
+	"instvars" : [
+		 ],
+	"name" : "SandboxError",
+	"pools" : [
+		 ],
+	"super" : "SimulationError",
+	"type" : "normal" }
