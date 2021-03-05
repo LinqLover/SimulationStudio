@@ -1,10 +1,17 @@
 private
 basicPerformTest
 
-	| testClass testResult |
-	testClass := Smalltalk classNamed: testSelector key.
-	testResult := Sandbox evaluate: [
-		testClass run: testSelector value].
+	| testCase exception |
+	testCase := (Smalltalk classNamed: testSelector key) selector: testSelector value.
+	
+	Sandbox
+		evaluate: [testCase runCaseWithoutTimeout]
+		on: (Error, Warning, Halt), TestResult failure
+		do: [:ex | exception := ex].
+	
 	self
-		assert: testResult passedCount = 1
-		description: ['{1} ({2})' format: {self selector. testResult asString}].
+		assert: testCase shouldPass
+		equals: exception isNil "passed?"
+		description: [exception
+			ifNotNil: [exception messageText]
+			ifNil: ['Unexpected pass']].

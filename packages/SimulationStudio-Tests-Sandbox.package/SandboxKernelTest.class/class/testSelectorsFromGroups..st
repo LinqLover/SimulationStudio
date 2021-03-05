@@ -8,8 +8,14 @@ testSelectorsFromGroups: testGroups
 				ifTrue: [Smalltalk classNamed: key]
 				ifFalse: [key].
 			
-			(selectors isSymbol
-				ifTrue: [(testClass perform: selectors) tests collect: #selector]
-				ifFalse: [selectors])
+			(true
+				caseOf: {
+					[selectors isSymbol] -> [
+						(testClass perform: selectors) tests
+							collect: #selector].
+					[selectors size >= 2 and: [selectors first = #-]] -> [
+						(testClass suite tests collect: #selector)
+							copyWithoutAll: (selectors allButFirst)] }
+				otherwise: [selectors])
 					collect: [:selector | testClass name -> selector]
 					thenDo: [:pair | stream nextPut: pair]]]
