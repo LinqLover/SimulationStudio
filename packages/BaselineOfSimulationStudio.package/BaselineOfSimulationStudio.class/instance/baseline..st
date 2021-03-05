@@ -20,4 +20,9 @@ baseline: spec
 			package: 'SimulationStudio-Tests-Base' with: [
 				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Tests-Sandbox' with: [
-				spec requires: #('SimulationStudio-Sandbox' 'SimulationStudio-Tests-Base')]].
+				spec requires: #('SimulationStudio-Sandbox' 'SimulationStudio-Tests-Base')].
+		
+		"groups"
+		spec
+			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox');
+			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox')].
