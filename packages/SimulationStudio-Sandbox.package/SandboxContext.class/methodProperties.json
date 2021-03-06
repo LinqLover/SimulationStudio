@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"access:indirectors:" : "ct 3/4/2021 18:28",
+		"activateOperationForbidden:" : "ct 3/3/2021 17:55",
+		"doNamedPrimitiveIn:for:withArgs:" : "ct 3/5/2021 19:22",
+		"doPrimitive:method:receiver:args:" : "ct 3/5/2021 17:21",
+		"doPrimitiveHash:receiver:args:" : "ct 3/4/2021 17:59",
+		"doPrimitiveNew:receiver:args:" : "ct 3/4/2021 20:16",
+		"elements:exchangeIdentityWith:" : "ct 1/10/2021 21:05",
+		"elements:forwardIdentityAndHashTo:" : "ct 1/10/2021 21:07",
+		"elements:forwardIdentityTo:" : "ct 1/10/2021 21:05",
+		"elements:forwardIdentityTo:copyHash:" : "ct 1/10/2021 21:05",
+		"initializeFrom:" : "ct 3/4/2021 19:27",
+		"object:basicAt:" : "ct 3/4/2021 19:27",
+		"object:basicAt:put:" : "ct 3/4/2021 19:27",
+		"object:instVarAt:" : "ct 3/4/2021 19:28",
+		"object:instVarAt:put:" : "ct 3/4/2021 19:25",
+		"operationForbidden:" : "ct 3/4/2021 23:48",
+		"runSimulated:contextAtEachStep:" : "ct 3/5/2021 00:25",
+		"sandbox" : "ct 12/28/2020 19:40",
+		"sandbox:" : "ct 12/28/2020 19:40",
+		"simulatedObject:instVarAt:put:" : "ct 3/4/2021 19:22",
+		"step" : "ct 12/31/2020 01:54",
+		"tryNamedPrimitiveIn:for:withArgs:" : "ct 3/4/2021 19:24" } }

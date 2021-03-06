@@ -1,0 +1,27 @@
+{
+	"class" : {
+		"debug:" : "ct 3/5/2021 21:17",
+		"evaluate:" : "ct 3/5/2021 21:06",
+		"evaluate:ifFailed:" : "ct 3/5/2021 21:24",
+		"evaluate:on:do:" : "ct 3/5/2021 21:31" },
+	"instance" : {
+		"addObject:" : "ct 1/9/2021 22:43",
+		"basicEvaluate:" : "ct 3/5/2021 21:31",
+		"debug:" : "ct 3/5/2021 21:25",
+		"elements:exchangeIdentityWith:" : "ct 1/10/2021 21:03",
+		"elements:forwardIdentityAndHashTo:" : "ct 1/10/2021 21:07",
+		"elements:forwardIdentityTo:" : "ct 1/10/2021 21:02",
+		"elements:forwardIdentityTo:copyHash:" : "ct 3/4/2021 20:19",
+		"evaluate:" : "ct 3/5/2021 21:22",
+		"evaluate:ifFailed:" : "ct 3/5/2021 21:24",
+		"evaluate:on:do:" : "ct 3/5/2021 21:31",
+		"hashFor:" : "ct 1/10/2021 21:40",
+		"initialize" : "ct 1/18/2021 17:06",
+		"prepareObject:" : "ct 1/9/2021 23:06",
+		"readableObjectFor:" : "ct 12/28/2020 21:24",
+		"registerStep" : "ct 12/31/2020 02:05",
+		"stepCount" : "ct 12/31/2020 01:54",
+		"stepLimit" : "ct 3/5/2021 23:27",
+		"stepLimit:" : "ct 3/5/2021 23:27",
+		"updateObject:" : "ct 3/4/2021 19:47",
+		"writableObjectFor:" : "ct 1/9/2021 23:01" } }

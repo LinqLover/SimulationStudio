@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"executionTests" : "ct 3/3/2021 18:29",
+		"shouldExecute:" : "ct 12/28/2020 15:36",
+		"shouldExecuteReturn:" : "ct 12/28/2020 15:36",
+		"shouldExecuteSideEffect:" : "ct 12/28/2020 15:37",
+		"shouldExecuteValue:" : "ct 12/28/2020 15:37",
+		"testContextClass" : "ct 3/5/2021 19:25",
+		"testCustomizationLevel" : "ct 3/5/2021 19:24",
+		"testCustomize" : "ct 3/5/2021 19:25",
+		"testDecustomize" : "ct 3/5/2021 19:25" } }

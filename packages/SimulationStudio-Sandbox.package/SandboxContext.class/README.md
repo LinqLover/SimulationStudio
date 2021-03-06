@@ -1,0 +1,1 @@
+I am a SimulationContext that is executed in a Sandbox, aiming to isolate all side effects and keeping them apart from the rest of the image.

@@ -1,0 +1,16 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#baseline : 'SimulationStudio',
+			#directory : 'packages',
+			#platforms : [ #squeak ],
+			#load : [ #tests ]
+		}
+	],
+	#testing : {
+		#packages : [ 'SimulationStudio-Tests-Base', 'SimulationStudio-Tests-Sandbox' ],
+		#coverage : {
+			#packages : [ 'SimulationStudio-Base', 'SimulationStudio-Sandbox' ]
+		}
+	}
+}

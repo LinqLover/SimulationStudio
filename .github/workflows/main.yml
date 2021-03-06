@@ -1,0 +1,39 @@
+name: smalltalkCI
+
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * 1"
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false # facilitates debugging
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+        smalltalk: [ Squeak64-Trunk ]
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-version: ${{ matrix.smalltalk }}
+      - name: Run test suite
+        shell: bash
+        run: smalltalkci -s ${{ matrix.smalltalk }}
+        timeout-minutes: 15
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # for coverage reports
+      - name: Send email on failure
+        if: ${{ github.event_name == 'schedule' && failure() }}
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: GitHub Actions failed for ${{ github.repository }}
+          body: Build job of ${{ github.repository }} failed! See https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} for more information.
+          to: ${{ secrets.MAIL_RECEIVER }}
+          from: GitHub Actions
