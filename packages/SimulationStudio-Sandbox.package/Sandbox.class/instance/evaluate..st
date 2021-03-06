@@ -1,6 +1,6 @@
 evaluating
 evaluate: aBlock
-	"Evaluate aBlock in a the receiver, isolating it from the rest of the image.
+	"Evaluate aBlock in a the receiver and answer the result, isolating it from the rest of the image.
 	
 	Example:
 		Sandbox evaluate: [World extent: 0 @ 0; bounds].

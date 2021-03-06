@@ -6,6 +6,10 @@ testSandbox2
 		at: [String streamContents: [:s |
 				Sandbox new evaluate: [s nextPut: $x]]]
 			put: '';
+		at: [| x |
+				x := {1}.
+				Sandbox new evaluate: [x at: 1 put: 2. x]]
+			put: {2};
 		at: [Sandbox new evaluate: [
 				(String streamContents: [:s | s nextPut: $x]) copy]]
 			put: 'x';
