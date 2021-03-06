@@ -109,10 +109,10 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				accessIndirectors at: 1 put: #readableObjectFor:].
 			[149 "primitiveGetAttribute"] -> ["allowed"].
 			[158 "primitiveCompareWith"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
-			[160 "primitiveAdoptInstance"] -> [self shouldBeImplemented].
-			[161 "primitiveSetOrHasIdentityHash"] -> [self shouldBeImplemented].
-			[163 "primitiveGetImmutability"] -> [self shouldBeImplemented].
-			[164 "primitiveSetImmutability"] -> [self shouldBeImplemented].
+			[160 "primitiveAdoptInstance"] -> [self shouldBeImplemented: 'primitiveAdoptInstance'].
+			[161 "primitiveSetOrHasIdentityHash"] -> [self shouldBeImplemented: 'primitiveSetOrHasIdentityHash'].
+			[163 "primitiveGetImmutability"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[164 "primitiveSetImmutability"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[165 "primitiveIntegerAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
 			[166 "primitiveIntegerAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[167 "primitiveYield"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
@@ -159,8 +159,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[210 "primitiveContextAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
 			[211 "primitiveContextAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[212 "primitiveContextSize"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[213 "primitiveContextXray"] -> [self shouldBeImplemented].
-			[214 "primitiveVoidVMState"] -> [self shouldBeImplemented].
+			[213 "primitiveContextXray"] -> [self shouldBeImplemented: 'primitiveContextXray'].
+			[214 "primitiveVoidVMState"] -> [self shouldBeImplemented: 'primitiveVoidVMState'].
 			[215 "primitiveFlushCacheByMethod"] -> [
 				self flag: #shouldBeImplemented. "This has not been tested. See primitiveFlushCache."
 				accessIndirectors at: 1 put: #writableObjectFor:].
