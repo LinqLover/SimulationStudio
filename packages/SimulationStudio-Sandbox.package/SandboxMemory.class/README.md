@@ -1,0 +1,1 @@
+I am a memento class for Sandbox.
