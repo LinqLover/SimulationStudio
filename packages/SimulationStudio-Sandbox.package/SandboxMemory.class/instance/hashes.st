@@ -1,0 +1,4 @@
+accessing
+hashes
+
+	^ hashes

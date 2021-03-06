@@ -4,6 +4,8 @@
 	"instance" : {
 		"testCannotUsurpExecution" : "ct 3/5/2021 19:23",
 		"testIdentityHashConstant" : "ct 1/18/2021 18:31",
+		"testMemoryHashes" : "ct 3/6/2021 01:54",
+		"testMemoryObjects" : "ct 3/6/2021 01:44",
 		"testOperationForbidden" : "ct 3/3/2021 17:38",
 		"testRecursiveSandbox" : "ct 3/3/2021 12:46",
 		"testSandbox" : "ct 12/28/2020 20:42",

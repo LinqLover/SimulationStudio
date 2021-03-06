@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 3/6/2021 02:41",
+	"instvars" : [
+		"objects",
+		"hashes" ],
+	"name" : "SandboxMemory",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
