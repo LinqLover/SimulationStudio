@@ -30,6 +30,15 @@ Metacello new
 Open a git browser, clone the repository, and check out the latest commit from the default branch.
 [Learn more](https://github.com/hpi-swa/Squot#getting-started-with-an-existing-remote-project) about using the git browser.
 
+### ... as a dependency in your [Metacello baseline](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md#create-baseline)
+
+```smalltalk
+spec baseline: 'SimulationStudio' with: [
+	spec
+		repository: 'github://LinqLover/SimulationStudio/packages';
+		loads: 'SimulationStudio-Sandbox'].
+```
+
 ## Contribution and bug reports
 
 ... are very welcome! Please feel free to submit bug reports, discuss design changes, or propose new extensions!
