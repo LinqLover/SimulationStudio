@@ -2,7 +2,7 @@ controlling
 runUntilErrorOrReturnFrom: homeContext
 	"Overriden to enforce simulation."
 
-	|  errorBlock guardError ensureBlock guardEnsure ctxt error |
+	| errorBlock guardError ensureBlock guardEnsure ctxt error |
 	"Insert ensure and exception handler contexts under homeContext"
 	guardError := homeContext insertSender: (self customize: (
 		Context contextOn: UnhandledError do: (errorBlock := [:ex | ex resumeUnchecked: nil]))).
