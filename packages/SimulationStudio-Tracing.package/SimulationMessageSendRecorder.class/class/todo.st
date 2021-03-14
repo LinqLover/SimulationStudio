@@ -7,4 +7,5 @@ todo
 	- This does NOT work:
 		ContextMessageSendRecorder browseRecord: [
 			ContextMessageSendRecorder record: [6 / 7]]
-	- too much overhead recorded around'
+	- too much overhead recorded around
+	- many stack manipulation examples such as #insertEnsure: still failing'

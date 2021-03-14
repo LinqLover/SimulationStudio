@@ -1,8 +1,10 @@
-tests
-contextTestRunUntilErrorOrReturnFromNoError
+tests - ContextTest
+testContextRunUntilErrorOrReturnFromNoError
+	"Run entire process in simulation because #runUntilErrorOrReturnFrom: does not turn off simulation again"
 
 	| context process result sender |
-	process := Process forContext: (thisContext customize: [6 * 7] asContext).
+	process := [6 * 7] newProcess.
+	process suspendedContext: (thisContext customize: process suspendedContext).
 	process runUntil: [:ctxt | ctxt receiver == self].
 	context := process suspendedContext.
 	sender := context sender.
