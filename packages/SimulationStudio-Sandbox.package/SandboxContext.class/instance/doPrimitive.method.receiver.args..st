@@ -53,9 +53,7 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[99 "primitiveLoadImageSegment"] -> [^ self activateOperationForbidden: 'Image segment primitives are disabled in sandbox simulation'].
 			[101 "primitiveBeCursor"] -> [^ self activateOperationForbidden: 'primitiveBeCursor is disabled in sandbox simulation'].
 			[102 "primitiveBeDisplay"] -> [^ self activateOperationForbidden: 'primitiveBeDisplay is disabled in sandbox simulation'].
-			[103 "primitiveScanCharacters"] -> [
-				self flag: #reconsider. "Does this primitive have side effects?"
-				^ self activateOperationForbidden: 'primitiveScanCharacters is disabled in sandbox simulation'].
+			[103 "primitiveScanCharacters"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[105 "primitiveStringReplace"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[106 "primitiveScreenSize"] -> ["allowed"].
 			[107 "primitiveMouseButtons"] -> ["allowed"].
