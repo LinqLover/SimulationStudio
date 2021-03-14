@@ -1,5 +1,5 @@
 {
-	"category" : "SimulationStudio-Tests-Sandbox",
+	"category" : "SimulationStudio-Tests-Base",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SandboxKernelTest",
+	"name" : "SimulationKernelTest",
 	"pools" : [
 		 ],
-	"super" : "SimulationKernelTest",
+	"super" : "SimulationTestCase",
 	"type" : "normal" }

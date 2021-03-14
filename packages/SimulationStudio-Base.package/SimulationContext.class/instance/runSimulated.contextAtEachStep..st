@@ -16,7 +16,7 @@ runSimulated: aBlock contextAtEachStep: anotherBlock
 		home
 			push: ((ensure selector == #resume: or: [ensure selector == #resume:through:])
 				ifTrue: [ensure at: 1]
-				ifFalse: [ensure at: 3]);
+				ifFalse: [ensure at: 3]) "returnValue";
 			jump].
 	
 	current := self customize: current.
@@ -24,7 +24,7 @@ runSimulated: aBlock contextAtEachStep: anotherBlock
 	(anotherBlock numArgs = 0
 		ifTrue: ["optimized" [resume]]
 		ifFalse: ["stop execution on time, don't expose simulation details to caller"
-			[current == ensure or: 
+			[(current sender == ensure and: [current willReturn]) or: 
 				["Context >> #resume:"
 				current receiver isContext
 					and: [(current selector == #resume: or: [current selector == #resume:through:])

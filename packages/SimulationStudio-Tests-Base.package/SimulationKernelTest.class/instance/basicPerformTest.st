@@ -4,8 +4,8 @@ basicPerformTest
 	| testCase exception |
 	testCase := (Smalltalk classNamed: testSelector key) selector: testSelector value.
 	
-	Sandbox
-		evaluate: [testCase runCaseWithoutTimeout]
+	self
+		basicPerformTest: testCase
 		on: (Error, Warning, Halt), TestResult failure
 		do: [:ex | exception := ex].
 	
