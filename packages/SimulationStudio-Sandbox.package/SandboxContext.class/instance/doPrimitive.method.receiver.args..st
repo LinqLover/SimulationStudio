@@ -70,8 +70,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				self halt: 'primitiveExitToDebugger'.
 				^ self push: rcvr].
 			[115 "primitiveChangeClass"] -> [accessIndirectors
-				at: 1 put: #readableObjectFor:;
-				at: 2 put: #writableObjectFor:].
+				at: 1 put: #writableObjectFor:;
+				at: 2 put: #readableObjectFor:].
 			[116 "primitiveFlushCacheByMethod"] -> [
 				self flag: #shouldBeImplemented. "This has not been tested. See primitiveFlushCache."
 				accessIndirectors at: 1 put: #writableObjectFor:].
