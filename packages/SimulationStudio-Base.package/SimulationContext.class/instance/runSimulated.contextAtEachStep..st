@@ -26,7 +26,7 @@ runSimulated: aBlock contextAtEachStep: anotherBlock
 		ifFalse: ["stop execution on time, don't expose simulation details to caller"
 			[(current sender == ensure and: [current willReturn]) or: 
 				["Context >> #resume:"
-				current receiver isContext
+				((self objectClass: current receiver) inheritsFrom: Context)
 					and: [(current selector == #resume: or: [current selector == #resume:through:])
 					and: [current size >= 2]
 					and: [(current at: 2) == ensure]]]]	])
