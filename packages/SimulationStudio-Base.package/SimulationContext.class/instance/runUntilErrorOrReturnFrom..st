@@ -13,14 +13,11 @@ runUntilErrorOrReturnFrom: homeContext
 	error := nil.
 	[:exit | [
 		error ifNil: [
-			ctxt closure
-				caseOf: {
-					[errorBlock] -> [
-						error := (ctxt tempAt: 1) exception.
-						exit value].
-					[ensureBlock] -> [
-						exit value] }
-				otherwise: []].
+			ctxt closure == errorBlock ifTrue: [
+				error := (ctxt tempAt: 1) exception.
+				exit value].
+			ctxt closure == ensureBlock ifTrue: [
+				exit value]].
 		ctxt := ctxt step
 	] repeat] valueWithExit.
 	
