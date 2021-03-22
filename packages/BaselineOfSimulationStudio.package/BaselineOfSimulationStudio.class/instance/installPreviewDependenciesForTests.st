@@ -9,4 +9,5 @@ installPreviewDependenciesForTests
 		self depChangeset: 'https://gist.githubusercontent.com/LinqLover/a37216b502563e7b17ffac17220def02/raw/4fd97a9a36d674782007098434f24788c48ad8ed/Kernel-ct.%257B1382,1383%257D.1.cs'. "Merge result:
 			Kernel-ct.1382: Removes simulation guard from #newProcess
 			Kernel-ct.1383: Fixes simulation of #perform:... primitives 83, 84, and 100"
+		self depInbox: 'Kernel-ct.1369'. "Fixes Context >> #isPrimFailToken: for ProtoObjects"
 	}
