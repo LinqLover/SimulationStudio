@@ -6,7 +6,7 @@
 		"activateOperationForbidden:" : "ct 3/3/2021 17:55",
 		"doNamedPrimitiveIn:for:withArgs:" : "ct 3/22/2021 17:43",
 		"doPrimitive:method:receiver:args:" : "ct 3/20/2021 20:44",
-		"doPrimitiveHash:receiver:args:" : "ct 3/4/2021 17:59",
+		"doPrimitiveHash:receiver:args:" : "ct 3/22/2021 18:51",
 		"doPrimitiveNew:receiver:args:" : "ct 3/4/2021 20:16",
 		"elements:exchangeIdentityWith:" : "ct 1/10/2021 21:05",
 		"elements:forwardIdentityAndHashTo:" : "ct 1/10/2021 21:07",

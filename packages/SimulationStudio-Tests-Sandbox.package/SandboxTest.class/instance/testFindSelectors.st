@@ -1,5 +1,6 @@
 tests
 testFindSelectors
+	<timeout: 15 "seconds">
 
 	{
 		{{1. 2. 3. 4} asOrderedCollection. #(even). #(1 3) asOrderedCollection. #(removeAllSuchThat: reject:)}.
