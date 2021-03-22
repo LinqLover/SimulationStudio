@@ -1,6 +1,6 @@
 private
 writableObjectFor: anObject
 
-	^ self prepareObject: (objects
+	^ objects
 		at: anObject
-		ifAbsentPut: [anObject shallowCopy])
+		ifAbsentPut: [anObject shallowCopy]

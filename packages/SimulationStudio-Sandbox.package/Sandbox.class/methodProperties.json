@@ -8,7 +8,7 @@
 		"fromMemory:" : "ct 3/6/2021 01:39",
 		"streamSelectorsFor:arguments:thatAnswer:" : "ct 3/15/2021 12:43" },
 	"instance" : {
-		"addObject:" : "ct 3/15/2021 12:05",
+		"addObject:" : "ct 3/22/2021 17:51",
 		"basicEvaluate:" : "ct 3/6/2021 13:12",
 		"debug:" : "ct 3/5/2021 21:25",
 		"elements:exchangeIdentityWith:" : "ct 1/10/2021 21:03",
@@ -23,11 +23,9 @@
 		"importMemory:" : "ct 3/6/2021 01:39",
 		"initialize" : "ct 1/18/2021 17:06",
 		"patchObject:with:" : "ct 3/6/2021 13:25",
-		"prepareObject:" : "ct 1/9/2021 23:06",
 		"readableObjectFor:" : "ct 12/28/2020 21:24",
 		"registerStep" : "ct 12/31/2020 02:05",
 		"stepCount" : "ct 12/31/2020 01:54",
 		"stepLimit" : "ct 3/5/2021 23:27",
 		"stepLimit:" : "ct 3/5/2021 23:27",
-		"updateObject:" : "ct 3/4/2021 19:47",
-		"writableObjectFor:" : "ct 1/9/2021 23:01" } }
+		"writableObjectFor:" : "ct 3/22/2021 17:44" } }

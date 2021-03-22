@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testBitBlt" : "ct 3/20/2021 20:55",
 		"testCannotUsurpExecution" : "ct 3/5/2021 19:23",
 		"testFindSelectors" : "ct 3/15/2021 13:23",
 		"testIdentityHashConstant" : "ct 1/18/2021 18:31",

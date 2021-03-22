@@ -1,4 +1,4 @@
 private
 addObject: anObject
 
-	^ (objects add: (Association basicNew key: anObject value: (self prepareObject: anObject))) value
+	^ objects at: anObject put: anObject
