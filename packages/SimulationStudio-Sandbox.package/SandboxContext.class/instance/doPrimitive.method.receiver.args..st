@@ -15,9 +15,9 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[40 "primitiveAsFloat"] -> [
 				accessIndirectors at: 1 put: #readableObjectFor:.
 				selector := #doPrimitiveNew:receiver:args:].
-			[60 "primitiveAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[61 "primitiveAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
-			[62 "primitiveSize"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[60 "primitiveAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[61 "primitiveAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
+			[62 "primitiveSize"] -> [accessIndirectors atLast: 1 put: #readableObjectFor:].
 			[63 "primitiveStringAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
 			[64 "primitiveStringAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[68 "primitiveObjectAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
@@ -60,9 +60,9 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[108 "primitiveKbdNext"] -> [^ self activateOperationForbidden: 'primitiveKbdNext is disabled in sandbox simulation'].
 			[109 "primitiveKbdPeek"] -> ["allowed"].
 			[110 "primitiveIdentical"] -> [accessIndirectors
-				at: 1 put: #readableObjectFor:;
-				at: 2 put: #readableObjectFor:].
-			[111 "primitiveClass"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+				atLast: 2 put: #readableObjectFor:;
+				atLast: 1 put: #readableObjectFor:].
+			[111 "primitiveClass"] -> [accessIndirectors atLast: 1 put: #readableObjectFor:].
 			[112 "primitiveBytesLeft"] -> ["allowed"].
 			[113 "primitiveQuit"] -> [^ self activateOperationForbidden: 'primitiveQuit is disabled in sandbox simulation'].
 			[114 "primitiveExitToDebugger"] -> [
@@ -125,8 +125,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				accessIndirectors at: 1 put: #readableObjectFor:.
 				selector := #doPrimitiveNew:receiver:args:].
 			[172 "primitiveFetchNextMourner"] -> [self flag: #reconsider].
-			[173 "primitiveSlotAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[174 "primitiveSlotAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[173 "primitiveSlotAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[174 "primitiveSlotAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[175 "primitiveBehaviorHash"] -> [#doPrimitiveHash:receiver:args:].
 			[176 "primitiveMaxIdentityHash"] -> ["allowed"].
 			[177 "primitiveAllInstances"] -> ["allowed"].

@@ -1,7 +1,7 @@
 private - object access
-object: anObject basicAt: index put: value
+simulatedObject: anObject basicAt: index put: value
 
-	^ super
+	^ self
 		object: (sandbox writableObjectFor: anObject)
 		basicAt: index
 		put: value
