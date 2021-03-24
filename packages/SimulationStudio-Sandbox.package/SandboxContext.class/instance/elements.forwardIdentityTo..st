@@ -1,4 +1,7 @@
 private - object access
-elements: anArray forwardIdentityTo: otherArray
+elements: anArray forwardIdentityTo: anotherArray
 
-	self push: (sandbox elements: anArray forwardIdentityTo: otherArray).
+	^ self
+		elements: anArray
+		forwardIdentityTo: anotherArray
+		copyHash: false

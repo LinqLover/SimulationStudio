@@ -107,10 +107,12 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				accessIndirectors at: 1 put: #readableObjectFor:].
 			[149 "primitiveGetAttribute"] -> ["allowed"].
 			[158 "primitiveCompareWith"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
-			[160 "primitiveAdoptInstance"] -> [self shouldBeImplemented: 'primitiveAdoptInstance'].
+			[160 "primitiveAdoptInstance"] -> [accessIndirectors
+				at: 1 put: #readableObjectFor:;
+				at: 2 put: #writableObjectFor:].
 			[161 "primitiveSetOrHasIdentityHash"] -> [self shouldBeImplemented: 'primitiveSetOrHasIdentityHash'].
 			[163 "primitiveGetImmutability"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[164 "primitiveSetImmutability"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[164 "primitiveSetImmutability"] -> [selector := #doPrimitiveSetImmutability:receiver:args:].
 			[165 "primitiveIntegerAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
 			[166 "primitiveIntegerAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[167 "primitiveYield"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
