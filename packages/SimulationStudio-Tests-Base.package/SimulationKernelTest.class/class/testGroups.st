@@ -18,4 +18,5 @@ testGroups
 			#testCustomizationLevel. "level 3 is just too slow"};
 		at: #TrueTest put: #suite;
 		at: #UndefinedObjectTest put: #suite;
+		at: #WriteBarrierTest put: #suite;
 		yourself
