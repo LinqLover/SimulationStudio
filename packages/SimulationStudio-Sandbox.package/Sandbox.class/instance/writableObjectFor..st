@@ -1,6 +1,10 @@
 private
 writableObjectFor: anObject
 
-	^ self prepareObject: (objects
+	^ objects
 		at: anObject
-		ifAbsentPut: [anObject shallowCopy])
+		ifAbsentPut: [| writableObject |
+			writableObject := anObject shallowCopy.
+			(anObject isReadOnlyObject and: [anObject class isImmediateClass not])
+				ifTrue: [writableObject setIsReadOnlyObject: true].
+			writableObject]

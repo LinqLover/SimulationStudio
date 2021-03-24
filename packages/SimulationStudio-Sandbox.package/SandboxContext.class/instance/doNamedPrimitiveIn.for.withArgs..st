@@ -18,7 +18,15 @@ doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: arguments
 						^ self activateOperationForbidden: ('Global B2D primitive {1} not available in simulation' format: {primitiveName})].
 				accessIndirectors at: 1 put: #writableObjectFor:].
 			[#BitBltPlugin] -> ["allowed"
-				accessIndirectors at: 1 put: #writableObjectFor:].
+				accessIndirectors at: 1 put: [:sandbox :object | | writableObject |
+					writableObject := sandbox writableObjectFor: object.
+					((self objectClass: writableObject) includesBehavior: BitBlt) ifTrue: [ | destForm |
+						"Any BitBlt primitive modifies destForm. Thus always sandbox it and its bits. See Form >> #postCopy."
+						destForm := self object: writableObject instVarAt: 1 put:
+							(sandbox writableObjectFor: (self object: writableObject instVarAt: 1)).
+						self object: destForm instVarAt: 1 "bits" put:
+							(sandbox writableObjectFor: (self object: destForm instVarAt: 1))].
+					writableObject]].
 			[#FilePlugin] -> [^ self activateOperationForbidden: 'FilePlugin not available in simulation'].
 			[#LargeIntegers] -> ["allowed"].
 			[#MiscPrimitivePlugin] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].

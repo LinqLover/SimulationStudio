@@ -1,6 +1,6 @@
 private - object access
-object: anObject basicAt: index
+simulatedObject: anObject instVarAt: index
 
-	^ super
+	^ self
 		object: (sandbox readableObjectFor: anObject)
-		basicAt: index
+		instVarAt: index
