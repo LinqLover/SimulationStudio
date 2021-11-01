@@ -27,3 +27,8 @@ baseline: spec
 		spec
 			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox');
 			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox')].
+	
+	spec for: #'squeak5.x' do: [
+		spec package: 'SimulationStudio-Compatibility-Squeak5'.
+		spec package: 'SimulationStudio-Base' with: [
+			spec includes: 'SimulationStudio-Compatibility-Squeak5']].
