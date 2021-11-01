@@ -13,7 +13,7 @@ jobs:
       fail-fast: false # facilitates debugging
       matrix:
         os: [ ubuntu-latest, windows-latest ]
-        smalltalk: [ Squeak64-Trunk ]
+        smalltalk: [ Squeak64-Trunk, Squeak64-5.3 ]
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
