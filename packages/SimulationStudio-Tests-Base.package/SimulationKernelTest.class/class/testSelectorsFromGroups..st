@@ -10,6 +10,9 @@ testSelectorsFromGroups: testGroups
 			
 			(true
 				caseOf: {
+					[SystemVersion current isAlpha not and: [testClass isNil]] -> [
+						Transcript showln: ('Skipping {1} on legacy version of Squeak' format: {key}).
+						#()].
 					[selectors isSymbol] -> [
 						(testClass perform: selectors) tests
 							collect: #selector].
