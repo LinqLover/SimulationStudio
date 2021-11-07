@@ -1,8 +1,8 @@
 OrderedDictionary {
+	'packages/BaselineOfSimulationStudio.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Base.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Sandbox.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Tracing.package' : #SquotCypressCodeSerializer,
-	'packages/SimulationStudio-Tests-Sandbox.package' : #SquotCypressCodeSerializer,
-	'packages/BaselineOfSimulationStudio.package' : #SquotCypressCodeSerializer,
-	'packages/SimulationStudio-Tests-Base.package' : #SquotCypressCodeSerializer
+	'packages/SimulationStudio-Tests-Base.package' : #SquotCypressCodeSerializer,
+	'packages/SimulationStudio-Tests-Sandbox.package' : #SquotCypressCodeSerializer
 }
