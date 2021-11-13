@@ -2,6 +2,10 @@ accessing - stack patching
 stackp: newStackp
 
 	| delta |
+	stack ifNil: [
+		"sent via #updateInstancesFrom:"
+		self initializeStack].
+	
 	stackp := newStackp.
 	delta := stack size - stackp.
 	delta > 0 ifTrue: [
