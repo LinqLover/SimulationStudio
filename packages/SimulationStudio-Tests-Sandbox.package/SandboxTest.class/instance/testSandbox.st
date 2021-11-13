@@ -6,7 +6,7 @@ testSandbox
 	obj add: 1.
 	self assert: [obj includes: 1].
 	
-	sandbox := Sandbox new.
+	sandbox := self sandboxClass new.
 	sandbox evaluate: [obj add: 2].
 	
 	self deny: [obj includes: 2].

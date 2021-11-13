@@ -2,7 +2,7 @@ tests
 testMemoryObjects
 
 	| sandbox a b x |
-	sandbox := Sandbox new.
+	sandbox := self sandboxClass new.
 	a := Object new.
 	b := Object new.
 	x := a.
@@ -12,5 +12,5 @@ testMemoryObjects
 		self assert: b equals: x].
 	self assert: a equals: x.
 	
-	sandbox := Sandbox fromMemory: sandbox exportMemory.
+	sandbox := self sandboxClass fromMemory: sandbox exportMemory.
 	self assert: b equals: (sandbox evaluate: [x]).

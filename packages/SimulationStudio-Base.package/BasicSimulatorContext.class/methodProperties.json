@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"forbiddenBasicAddSelector:withMethod:" : "ct 11/13/2021 20:07",
+		"forbiddenBasicRemoveSelector:" : "ct 11/13/2021 20:14",
+		"newFor:" : "ct 11/11/2021 21:16" },
+	"instance" : {
+		"initializeFrom:" : "ct 11/11/2021 21:14",
+		"simulator" : "ct 11/11/2021 21:14",
+		"simulator:" : "ct 11/11/2021 21:17" } }

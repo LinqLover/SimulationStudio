@@ -3,7 +3,7 @@ testIdentityHashConstant
 
 	| point result |
 	point := Point basicNew.
-	result := Sandbox evaluate: [{
+	result := self sandboxClass evaluate: [{
 		point identityHash.
 		point setX: 1 setY: 2.
 		point identityHash}].

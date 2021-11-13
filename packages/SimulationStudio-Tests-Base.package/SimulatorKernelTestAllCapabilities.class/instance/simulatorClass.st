@@ -1,0 +1,4 @@
+accessing
+simulatorClass
+
+	^ TestSimulatorAllCapabilities

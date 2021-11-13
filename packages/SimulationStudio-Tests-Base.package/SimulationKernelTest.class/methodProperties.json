@@ -10,11 +10,12 @@
 		"wantsToTest:" : "ct 3/5/2021 16:50" },
 	"instance" : {
 		"basicPerformTest" : "ct 3/14/2021 16:08",
-		"basicPerformTest:on:do:" : "ct 3/14/2021 16:09",
+		"basicPerformTest:on:do:" : "ct 11/12/2021 19:37",
 		"contextClass" : "ct 3/14/2021 16:10",
 		"expectedFailures" : "ct 3/5/2021 17:03",
 		"performTest" : "ct 3/5/2021 19:23",
 		"printOn:" : "ct 3/5/2021 17:05",
+		"runSimulated:" : "ct 11/12/2021 19:37",
 		"testClassChangeClassOf" : "ct 3/14/2021 15:50",
 		"testContextRunUntilErrorOrReturnFromError" : "ct 3/14/2021 16:05",
 		"testContextRunUntilErrorOrReturnFromNoError" : "ct 3/14/2021 16:05",

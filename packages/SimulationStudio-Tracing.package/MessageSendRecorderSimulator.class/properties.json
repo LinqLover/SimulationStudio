@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Tracing",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"recorder",
+		"recordBlocks" ],
+	"name" : "MessageSendRecorderSimulator",
+	"pools" : [
+		 ],
+	"super" : "Simulator",
+	"type" : "normal" }

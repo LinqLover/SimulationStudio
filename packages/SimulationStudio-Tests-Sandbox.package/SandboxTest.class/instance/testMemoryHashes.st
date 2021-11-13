@@ -2,7 +2,7 @@ tests
 testMemoryHashes
 
 	| sandbox a b |
-	sandbox := Sandbox new.
+	sandbox := self sandboxClass new.
 	a := Object new.
 	b := Object new.
 	a identityHash = b identityHash ifTrue: [
@@ -13,5 +13,5 @@ testMemoryHashes
 	self deny: a identityHash equals: b identityHash.
 	self assert: b identityHash equals: (sandbox evaluate: [a identityHash]).
 	
-	sandbox := Sandbox fromMemory: sandbox exportMemory.
+	sandbox := self sandboxClass fromMemory: sandbox exportMemory.
 	self assert: b identityHash equals: (sandbox evaluate: [a identityHash]).

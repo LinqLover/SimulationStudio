@@ -1,0 +1,1 @@
+I am a simulation context that delegates control to a Simulator. All delegators are implemented in my subclass SimulatorClass; however, for performance reasons, the simulator will only compile those delegators that it actually used into a private subclass of myself. See #requiredCapabilities.

@@ -6,7 +6,7 @@ testBitBlt
 	originalColors := display colorsUsed.
 	self deny: {Color blue} equals: originalColors description: 'Prerequisites not matched'.
 	
-	Sandbox evaluate: [
+	self sandboxClass evaluate: [
 		display fillColor: Color blue.
 		self assert: {Color blue} equals: display colorsUsed].
 	

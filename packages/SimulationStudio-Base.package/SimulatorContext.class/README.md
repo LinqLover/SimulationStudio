@@ -1,0 +1,1 @@
+I provide an exhaustive eager implementation of all delegators for a BasicSimulatorClass. Usually, the simulator will not actually instantiate me but copy a subset of my selectors to another class for performance reasons. See #requiredCapabilities.

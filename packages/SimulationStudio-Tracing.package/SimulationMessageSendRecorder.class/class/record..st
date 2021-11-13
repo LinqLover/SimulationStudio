@@ -1,8 +1,8 @@
-as yet unclassified
+recording
 record: aBlock
 
 	^ self new
-		"setRecordAllObjects;"
+		setRecordAllObjects;
 		setMessageSend: aBlock;
 		record;
 		topRecord

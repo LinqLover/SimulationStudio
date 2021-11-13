@@ -1,0 +1,4 @@
+accessing
+sandboxClass
+
+	^ Sandbox2

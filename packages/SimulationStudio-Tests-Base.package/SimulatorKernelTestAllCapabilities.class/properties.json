@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tests-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SimulatorKernelTestAllCapabilities",
+	"pools" : [
+		 ],
+	"super" : "SimulatorKernelTest",
+	"type" : "normal" }

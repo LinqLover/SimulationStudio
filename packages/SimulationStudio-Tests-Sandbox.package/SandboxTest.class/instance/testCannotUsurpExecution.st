@@ -5,5 +5,5 @@ testCannotUsurpExecution
 	self
 		shouldNotChange: [thisContext simCustomizationLevel]
 		after: [
-			Sandbox evaluate: [(thisContext findContextSuchThat: [:ctx |
+			self sandboxClass evaluate: [(thisContext findContextSuchThat: [:ctx |
 				ctx selector = #runSimulated:contextAtEachStep:]) privSender: nil]].
