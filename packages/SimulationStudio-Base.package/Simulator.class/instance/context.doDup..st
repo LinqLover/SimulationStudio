@@ -1,6 +1,6 @@
 instruction processing
 context: aContext doDup: aBlock
-	<capability: #dup>
+	<capability: #doDup>
 
 	^ nextSimulator
 		ifNotNil: [nextSimulator context: aContext doDup: aBlock]

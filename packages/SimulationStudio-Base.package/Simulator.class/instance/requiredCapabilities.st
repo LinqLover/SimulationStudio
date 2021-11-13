@@ -4,5 +4,5 @@ requiredCapabilities
 
 	^ ((Pragma allNamed: #capability: from: self class to: thisContext methodClass)
 		reject: [:pragma |
-			(self class lookupSelector: pragma selector) == pragma method])
+			(self class lookupSelector: pragma selector) methodClass == pragma methodClass])
 		collect: [:pragma | pragma argumentAt: 1] as: Set
