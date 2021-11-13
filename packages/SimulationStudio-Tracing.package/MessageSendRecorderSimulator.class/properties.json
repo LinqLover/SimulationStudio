@@ -7,11 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"recorder",
-		"currentRecord",
-		"currentReceiver",
-		"currentArguments" ],
-	"name" : "SimulationMsrContext",
+		"recordBlocks" ],
+	"name" : "MessageSendRecorderSimulator",
 	"pools" : [
 		 ],
-	"super" : "SimulationContext",
-	"type" : "variable" }
+	"super" : "Simulator",
+	"type" : "normal" }

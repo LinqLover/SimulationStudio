@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"browseRecord:" : "ct 11/12/2021 22:35",
+		"on:" : "ct 11/12/2021 22:44",
+		"record:" : "ct 11/12/2021 14:15" },
+	"instance" : {
+		"activateDuring:" : "ct 11/13/2021 16:53",
+		"basicSimulate:do:chain:" : "ct 11/13/2021 17:01",
+		"browseRecord" : "ct 11/11/2021 22:30",
+		"context:return:from:do:" : "ct 11/12/2021 21:29",
+		"context:send:to:with:lookupIn:do:" : "ct 11/12/2021 21:31",
+		"initialize" : "ct 11/12/2021 22:44",
+		"newRecorder" : "ct 11/12/2021 23:06",
+		"record:" : "ct 11/12/2021 14:15",
+		"recordReturn:to:" : "ct 11/12/2021 23:06",
+		"recordSendMethod:receiver:arguments:context:" : "ct 11/12/2021 21:15",
+		"recorder" : "ct 11/11/2021 21:29",
+		"recorder:" : "ct 11/11/2021 21:29" } }
