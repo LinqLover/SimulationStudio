@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 11/13/2021 16:29",
+	"instvars" : [
+		"simulator" ],
+	"name" : "BasicSimulatorContext",
+	"pools" : [
+		 ],
+	"super" : "SimulationContext",
+	"type" : "variable" }
