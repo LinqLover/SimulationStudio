@@ -8,7 +8,7 @@ testFindSelectors
 	} withIndexDo: [:fixture :index |
 		| selectors |
 		Transcript showln: ('{1}({2}: {3}' format: {self. index. fixture}).
-		selectors := Sandbox
+		selectors := self sandboxClass
 			findSelectorsFor: fixture first
 			arguments: fixture second
 			thatAnswer: fixture third.

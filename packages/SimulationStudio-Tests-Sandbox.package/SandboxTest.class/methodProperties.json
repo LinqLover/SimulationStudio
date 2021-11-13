@@ -2,13 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testBitBlt" : "ct 3/20/2021 20:55",
-		"testCannotUsurpExecution" : "ct 3/5/2021 19:23",
-		"testFindSelectors" : "ct 3/22/2021 18:56",
-		"testIdentityHashConstant" : "ct 1/18/2021 18:31",
-		"testMemoryHashes" : "ct 3/6/2021 01:54",
-		"testMemoryObjects" : "ct 3/6/2021 01:44",
-		"testOperationForbidden" : "ct 3/3/2021 17:38",
-		"testRecursiveSandbox" : "ct 3/3/2021 12:46",
-		"testSandbox" : "ct 12/28/2020 20:42",
-		"testSandbox2" : "ct 3/6/2021 13:14" } }
+		"sandboxClass" : "ct 11/13/2021 16:05",
+		"testBitBlt" : "ct 11/13/2021 00:00",
+		"testCannotUsurpExecution" : "ct 11/13/2021 00:01",
+		"testFindSelectors" : "ct 11/13/2021 00:01",
+		"testIdentityHashConstant" : "ct 11/13/2021 00:01",
+		"testMemoryHashes" : "ct 11/13/2021 00:01",
+		"testMemoryObjects" : "ct 11/13/2021 00:01",
+		"testOperationForbidden" : "ct 11/13/2021 00:01",
+		"testRecursiveSandbox" : "ct 11/13/2021 00:01",
+		"testSandbox" : "ct 11/13/2021 00:01",
+		"testSandbox2" : "ct 11/13/2021 00:01" } }

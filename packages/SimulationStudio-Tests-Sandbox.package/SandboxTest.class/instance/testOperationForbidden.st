@@ -1,6 +1,6 @@
 tests
 testOperationForbidden
 
-	Sandbox evaluate: [self
+	self sandboxClass evaluate: [self
 		should: [FileDirectory default exists]
 		raise: SandboxOperationForbidden].

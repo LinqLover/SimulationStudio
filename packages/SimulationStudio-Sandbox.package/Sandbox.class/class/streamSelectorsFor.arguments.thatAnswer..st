@@ -11,7 +11,7 @@ streamSelectorsFor: receiver arguments: arguments thatAnswer: expectedResult
 	^ Generator on: [:generator |
 		selectors do: [:sel |
 			| match sandbox |
-			sandbox := Sandbox new.
+			sandbox := self new.
 			sandbox stepLimit: 100000.
 			match := [sandbox
 				evaluate: [
