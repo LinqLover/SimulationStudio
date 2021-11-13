@@ -1,0 +1,4 @@
+private
+simulatorClass
+
+	^ BenchmarkSimulator
