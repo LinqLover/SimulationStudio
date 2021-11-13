@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tests-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TestSimulatorAllCapabilities",
+	"pools" : [
+		 ],
+	"super" : "Simulator",
+	"type" : "normal" }
