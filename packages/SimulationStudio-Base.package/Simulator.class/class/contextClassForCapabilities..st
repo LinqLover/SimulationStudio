@@ -12,11 +12,11 @@ contextClassForCapabilities: capabilities
 			capabilities do: [:selector |
 				class
 					addSelectorSilently: selector
-					withMethod: self fullContextClass >> selector].
+					withMethod: (self fullContextClass >> selector) copy].
 			"Seal class to avoid developer confusion."
 			class theMetaClass
 				addSelectorSilently: #basicAddSelector:withMethod:
-					withMethod: (class theMetaClass lookupSelector: #forbiddenBasicAddSelector:withMethod:);
+					withMethod: (class theMetaClass lookupSelector: #forbiddenBasicAddSelector:withMethod:) copy;
 				addSelectorSilently: #basicRemoveSelector:
-					withMethod: (class theMetaClass lookupSelector: #forbiddenBasicRemoveSelector:).
+					withMethod: (class theMetaClass lookupSelector: #forbiddenBasicRemoveSelector:) copy.
 			class]
