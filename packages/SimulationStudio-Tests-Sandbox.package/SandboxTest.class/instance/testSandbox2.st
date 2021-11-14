@@ -27,6 +27,12 @@ testSandbox2
 		at: [self sandboxClass new evaluate: [
 				[Notification signal * 2] on: Notification do: [:ex | ex resume: 3]]]
 			put: 6;
+		at: [self sandboxClass new evaluate: [
+				self executeShould: [2 / 0] inScopeOf: ZeroDivide]]
+			put: true;
+		at: [self sandboxClass new evaluate: [
+				[:exit | [exit value] ensure: []. 2] valueWithExit]]
+			put: nil;
 		yourself.
 	
 	assertions keysAndValuesDo: [:key :value |
