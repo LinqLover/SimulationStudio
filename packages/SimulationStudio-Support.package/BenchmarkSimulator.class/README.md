@@ -1,0 +1,1 @@
+I log several benchmarks while executing code. See my class side for usage examples.

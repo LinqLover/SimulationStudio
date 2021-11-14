@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SimulatorLimitExceeded",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

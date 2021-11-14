@@ -1,0 +1,16 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 11/13/2021 16:40",
+	"instvars" : [
+		"stepCount",
+		"timeToRun",
+		"primitiveCounts" ],
+	"name" : "BenchmarkSimulator",
+	"pools" : [
+		 ],
+	"super" : "Simulator",
+	"type" : "normal" }

@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"benchmark:with:" : "ct 11/13/2021 17:53",
+		"benchmarkSimulators" : "ct 11/13/2021 22:15",
+		"browseRecord:" : "ct 11/13/2021 16:42",
+		"record:" : "ct 11/13/2021 16:42",
+		"selectBenchmark:with:" : "ct 11/13/2021 17:50" },
+	"instance" : {
+		"activateDuring:" : "ct 11/13/2021 16:54",
+		"basicSimulate:do:chain:" : "ct 11/13/2021 17:01",
+		"browsePrimitiveCounts" : "ct 11/13/2021 16:43",
+		"browseRecord" : "ct 11/12/2021 23:16",
+		"context:doPrimitive:method:receiver:args:do:" : "ct 11/12/2021 19:47",
+		"context:step:" : "ct 11/12/2021 19:57",
+		"context:tryNamedPrimitiveIn:for:withArgs:do:" : "ct 11/12/2021 20:00",
+		"incrementPrimitiveCountFor:" : "ct 11/12/2021 19:58",
+		"incrementStepCount" : "ct 11/12/2021 19:57",
+		"initialize" : "ct 11/12/2021 19:48",
+		"primitiveCounts" : "ct 11/12/2021 19:55",
+		"printOn:" : "ct 11/13/2021 18:02",
+		"record:" : "ct 11/12/2021 19:45",
+		"stepCount" : "ct 11/11/2021 19:17",
+		"timePerStep" : "ct 11/11/2021 19:47",
+		"timeToRun" : "ct 11/11/2021 19:30" } }
