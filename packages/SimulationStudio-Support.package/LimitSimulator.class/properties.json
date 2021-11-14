@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 11/13/2021 16:33",
+	"instvars" : [
+		"stepLimit",
+		"stepCount" ],
+	"name" : "LimitSimulator",
+	"pools" : [
+		 ],
+	"super" : "Simulator",
+	"type" : "normal" }

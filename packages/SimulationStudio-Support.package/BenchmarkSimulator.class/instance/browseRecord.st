@@ -1,0 +1,4 @@
+browsing
+browseRecord
+
+	self explore

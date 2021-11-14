@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tests-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BenchmarkSimulatorTest",
+	"pools" : [
+		 ],
+	"super" : "SimulationTestCase",
+	"type" : "normal" }
