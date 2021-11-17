@@ -6,16 +6,20 @@ A developing suite of applications and tools for code simulation in [Squeak/Smal
 
 Currently included features:
 
-- **`SimulationStudio-Base`:** Provides abstract functionality for simulating stack traces with `SimulationContext`.
+- **`SimulationStudio-Base`:** Provides abstract functionality for simulating stack frames by subclassing `SimulationContext` or `Simulator`.
+- **`SimulationStudio-Support`:** Contains several simulation goodies and examples such as the `BenchmarkSimulator` for hardware-independent benchmark creation or the `LimitSimulator` for hardware-independent calculation timeouts.
 - **`SimulationStudio-Sandbox`:** Execute Smalltalk code in an isolated environment without applying any side effects to the image.
   Also contains a light-weight alternative implementation of `MethodFinder` (see `Sandbox class >> #findSelectorsFor:arguments:thatAnswer:`).
 - **`SimulationStudio-Tracing` (experimental):**
   Record and browse fine-granular stack traces.
   Integrates the [MessageSendRecorder](https://github.com/hpi-swa/MessageSendRecorder).
 
-Check out the relevant classes for more details!
+Check out the relevant classes for more details and usage instructions!
 
-For more technical details, also read the announcement thread on the squeak-dev mailing list: [[ANN] SimulationStudio and sandboxed execution for Squeak](http://forum.world.st/ANN-SimulationStudio-and-sandboxed-execution-for-Squeak-td5127804.html)
+For more technical details, also read these announcement threads on the squeak-dev mailing list:
+
+- [[ANN] SimulationStudio and sandboxed execution for Squeak](http://forum.world.st/ANN-SimulationStudio-and-sandboxed-execution-for-Squeak-td5127804.html)
+- [News from SimulationStudio](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-November/216964.html)
 
 ## Installation
 
