@@ -3,6 +3,7 @@ context: aContext doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: argume
 
 	| literal primitiveName accessIndirectors directRcvrAndArgs value |
 	literal := aCompiledMethod literalAt: 1.
+	literal isArray ifFalse: [^ self context: aContext activateOperationForbidden: 'FFI not available in simulation'].
 	primitiveName := literal second.
 	
 	accessIndirectors := Array new: arguments size + 1 "withAll: nil".
