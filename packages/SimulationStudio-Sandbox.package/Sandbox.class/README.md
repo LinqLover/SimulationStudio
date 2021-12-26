@@ -16,7 +16,7 @@ This class is a legacy implementation of the new Sandbox2 simulator class. See c
 
 ## objects
 
-A WeakIdentityKeyDictionary that maps real objects to copies of them that have been modified by the simulated code. Entries where key and value are the same represent objects that are possessed by the simulated code.
+A PluggableWeakKeyDictionary that maps real objects to copies of them that have been modified by the simulated code. Entries where key and value are the same represent objects that are possessed by the simulated code.
 
 ## hashes
 
