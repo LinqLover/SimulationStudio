@@ -168,8 +168,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[231 "primitiveForceDisplayUpdate"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[232 "primitiveFormPrint"] -> [^ self class primitiveFailTokenFor: nil "don't support"].
 			[233 "primitiveSetFullScreen"] -> [^ self activateOperationForbidden: 'primitiveSetFullScreen is disabled in sandbox simulation'].
-			[238] -> [self isThisEverCalled: 'serial port primitive?'].
-			[239] -> [self isThisEverCalled: 'serial port primitive?'].
+			[238 "primitiveFloatAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[239 "primitiveFloatAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[242 "primitiveSignalAtUTCMicroseconds"] -> [^ self activateOperationForbidden: 'primitiveSignalAtMilliseconds is disabled in sandbox simulation'].
 			[243 "primitiveUpdateTimezone"] -> [^ self class primitiveFailTokenFor: nil "don't support"].
 			[247 "primitiveSnapshotEmbedded"] -> [^ self activateOperationForbidden: 'primitiveSnapshotEmbedded is disabled in sandbox simulation'].
