@@ -1,4 +1,4 @@
-testing
+nil
 shouldInheritSelectors
 
 	^ false
