@@ -1,4 +1,4 @@
 testing
 shouldInheritSelectors
 
-	^ false
+	^ self = Sandbox2Test
