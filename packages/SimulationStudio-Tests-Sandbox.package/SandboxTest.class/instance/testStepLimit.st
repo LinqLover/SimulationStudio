@@ -9,7 +9,7 @@ testStepLimit
 	
 	self assert: 10 factorial equals: result.
 	
-	sandbox stepLimit: 200 * 2.
+	sandbox stepLimit: sandbox stepLimit * 2.
 	self
 		should: [sandbox evaluate: [100 factorial]]
 		raise: Error.
