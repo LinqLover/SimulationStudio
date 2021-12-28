@@ -1,6 +1,7 @@
 # SimulationStudio
 
 [![smalltalkCI](https://github.com/LinqLover/SimulationStudio/actions/workflows/main.yml/badge.svg)](https://github.com/LinqLover/SimulationStudio/actions/workflows/main.yml)
+[![Coverage Status](https://coveralls.io/repos/github/LinqLover/SimulationStudio/badge.svg)](https://coveralls.io/github/LinqLover/SimulationStudio)
 
 A developing suite of applications and tools for code simulation in [Squeak/Smalltalk](https://squeak.org).
 
@@ -49,6 +50,3 @@ spec baseline: 'SimulationStudio' with: [
 ## Contribution and bug reports
 
 ... are very welcome! Please feel free to submit bug reports, discuss design changes, or propose new extensions!
-
-**Disclaimer:** This is an MVP-alpha project in an early stage which still contains more than a few hick-ups and ongoing construction sites at the moment.
-Go ahead and test it out, but don't use in production yet. :-)
