@@ -1,6 +1,5 @@
 recording
 activateDuring: aBlock
 
-	| result |
-	timeToRun := [result := super activateDuring: aBlock] timeToRun milliSeconds.
-	^ result
+	^ [super activateDuring: aBlock]
+		valueAndStoreTimeToRun: [:duration | timeToRun := duration]
