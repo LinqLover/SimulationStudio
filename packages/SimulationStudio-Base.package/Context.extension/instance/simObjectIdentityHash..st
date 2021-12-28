@@ -1,12 +1,11 @@
 *SimulationStudio-Base-mirror primitives
 simObjectIdentityHash: anObject
-	"Answer a SmallInteger whose value is related to anObject's identity, without executing arbitrary methods. This mimics the action of the VM when it fetches an object's identity hash.
+	"Answer a SmallInteger whose value is related to anObject's identity, without executing arbitrary methods. This mimics the behavior of #identityHash as it is defined in the base system.
 	 Used to simulate the execution machinery by, for example, the debugger.
 	 Primitive.  See Object documentation whatIsAPrimitive."
 
-	<primitive: 75>
 	| class |
 	class := self objectClass: anObject.
-	(SmallInteger == class or: [Character == class] or: [SmallFloat64 == class] or: [Behavior == class])
+	(SmallInteger == class or: [Character == class] or: [SmallFloat64 == class] or: [Behavior == class] or: [Metaclass == (self objectClass: class)])
 		ifTrue: [^ anObject identityHash].
-	^ self primitiveFailed
+	^ self simBasicObjectIdentityHash: anObject
