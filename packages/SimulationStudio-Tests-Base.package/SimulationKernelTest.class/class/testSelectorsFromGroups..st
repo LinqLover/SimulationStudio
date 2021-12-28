@@ -17,5 +17,5 @@ testSelectorsFromGroups: testGroups
 						(testClass suite tests collect: #selector)
 							copyWithoutAll: (selectors allButFirst)] }
 				otherwise: [selectors])
-					collect: [:selector | testClass name -> selector]
+					collect: [:selector | self testSelectorForClass: testClass selector: selector]
 					thenDo: [:pair | stream nextPut: pair]]]

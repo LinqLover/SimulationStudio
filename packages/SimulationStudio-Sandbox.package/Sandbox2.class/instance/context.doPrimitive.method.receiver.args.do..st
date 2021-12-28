@@ -168,8 +168,8 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[231 "primitiveForceDisplayUpdate"] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].
 			[232 "primitiveFormPrint"] -> [^ self context: aContext primitiveFailTokenFor: nil "don't support"].
 			[233 "primitiveSetFullScreen"] -> [^ self context: aContext activateOperationForbidden: 'primitiveSetFullScreen is disabled in sandbox simulation'].
-			[238] -> [self isThisEverCalled: 'serial port primitive?'].
-			[239] -> [self isThisEverCalled: 'serial port primitive?'].
+			[238 "primitiveFloatAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[239 "primitiveFloatAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[242 "primitiveSignalAtUTCMicroseconds"] -> [^ self context: aContext activateOperationForbidden: 'primitiveSignalAtMilliseconds is disabled in sandbox simulation'].
 			[243 "primitiveUpdateTimezone"] -> [^ self context: aContext primitiveFailTokenFor: nil "don't support"].
 			[247 "primitiveSnapshotEmbedded"] -> [^ self context: aContext activateOperationForbidden: 'primitiveSnapshotEmbedded is disabled in sandbox simulation'].

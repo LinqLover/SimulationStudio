@@ -6,7 +6,7 @@ basicPerformTest
 	
 	self
 		basicPerformTest: testCase
-		on: (Error, Warning, Halt), TestResult failure
+		on: (Error, Halt), TestResult failure, UnhandledError
 		do: [:ex | exception := ex].
 	
 	self

@@ -28,6 +28,7 @@ doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: arguments
 						self object: destForm instVarAt: 1 "bits" put:
 							(sandbox writableObjectFor: (self object: destForm instVarAt: 1))].
 					writableObject]].
+			[#CroquetPlugin] -> ["allowed"].
 			[#FilePlugin] -> [^ self activateOperationForbidden: 'FilePlugin not available in simulation'].
 			[#LargeIntegers] -> ["allowed"].
 			[#MiscPrimitivePlugin] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].

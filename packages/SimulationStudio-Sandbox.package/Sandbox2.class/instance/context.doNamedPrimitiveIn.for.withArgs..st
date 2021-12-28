@@ -28,6 +28,7 @@ context: aContext doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: argume
 						aContext object: destForm instVarAt: 1 "bits" put:
 							(sandbox writableObjectFor: (aContext object: destForm instVarAt: 1))].
 					writableObject]].
+			[#CroquetPlugin] -> ["allowed"].
 			[#FilePlugin] -> [^ self context: aContext activateOperationForbidden: 'FilePlugin not available in simulation'].
 			[#LargeIntegers] -> ["allowed"].
 			[#MiscPrimitivePlugin] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].

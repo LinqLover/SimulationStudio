@@ -3,7 +3,7 @@ testChainingReverse: aBoolean
 
 	| limit benchmark simulator primitiveCounts stepCount |
 	limit := LimitSimulator new
-		stepLimit: 10;
+		stepLimit: 20;
 		yourself.
 	simulator := aBoolean
 		ifFalse: [benchmark := self simulatorClass decorating: limit]
