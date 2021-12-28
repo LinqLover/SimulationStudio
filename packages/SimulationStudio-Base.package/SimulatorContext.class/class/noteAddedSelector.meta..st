@@ -7,4 +7,5 @@ noteAddedSelector: selector meta: isMeta
 	(Simulator respondsTo: #cleanUpContextClasses) ifTrue: [
 		"don't fail while checking out the package via Squot"
 		Simulator cleanUpContextClasses].
-	Transcript showln: ('You should restart all simulators now to apply the changes to {1}>>{2}.' format: {self. selector}).
+	Simulator allSubInstances ifNotEmpty: [
+		Transcript showln: ('You should restart all simulators now to apply the changes to {1}>>{2}.' format: {self. selector})].
