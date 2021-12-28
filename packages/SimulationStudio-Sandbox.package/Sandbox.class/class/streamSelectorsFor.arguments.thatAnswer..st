@@ -6,12 +6,11 @@ streamSelectorsFor: receiver arguments: arguments thatAnswer: expectedResult
 	"
 
 	| selectors |
-	selectors := (receiver class allSelectors select: [:sel | sel numArgs = arguments size]) sorted.
+	selectors := receiver class allSelectors select: [:sel | sel numArgs = arguments size].
 	
 	^ Generator on: [:generator |
 		selectors do: [:sel |
 			| match sandbox |
-			Transcript showln: sel. self flag: #debug.
 			sandbox := self new.
 			sandbox stepLimit: 100000.
 			match := [sandbox
