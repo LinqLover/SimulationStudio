@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"hashBlock",
+		"equalBlock" ],
+	"name" : "SimPluggableWeakKeyDictionary",
+	"pools" : [
+		 ],
+	"super" : "WeakKeyDictionary",
+	"type" : "normal" }
