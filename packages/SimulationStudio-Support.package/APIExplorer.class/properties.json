@@ -1,0 +1,18 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"classIndex",
+		"selectedCategory",
+		"selectedClasses",
+		"selectedMessage" ],
+	"name" : "APIExplorer",
+	"pools" : [
+		 ],
+	"super" : "StringHolder",
+	"type" : "variable" }
