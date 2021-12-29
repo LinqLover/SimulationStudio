@@ -3,8 +3,11 @@
 		 },
 	"instance" : {
 		"sandboxClass" : "ct 11/13/2021 16:05",
+		"someToken" : "ct 12/28/2021 23:00",
 		"testBitBlt" : "ct 11/13/2021 00:00",
 		"testCannotUsurpExecution" : "ct 11/13/2021 00:01",
+		"testClassComment" : "ct 12/29/2021 01:57",
+		"testCompile" : "ct 12/28/2021 23:00",
 		"testFindSelectors" : "ct 12/27/2021 00:32",
 		"testIdentityHashConstant" : "ct 11/13/2021 00:01",
 		"testMemoryHashes" : "ct 11/13/2021 00:01",
@@ -12,4 +15,5 @@
 		"testOperationForbidden" : "ct 11/13/2021 00:01",
 		"testRecursiveSandbox" : "ct 11/13/2021 00:01",
 		"testSandbox" : "ct 11/13/2021 00:01",
-		"testSandbox2" : "ct 11/14/2021 17:55" } }
+		"testSandbox2" : "ct 11/14/2021 17:55",
+		"testSubclass" : "ct 12/29/2021 19:15" } }

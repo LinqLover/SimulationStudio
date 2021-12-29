@@ -1,0 +1,4 @@
+accessing
+someToken
+
+	^ UUID nilUUID
