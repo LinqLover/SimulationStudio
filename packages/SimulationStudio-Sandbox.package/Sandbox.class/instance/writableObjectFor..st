@@ -4,7 +4,7 @@ writableObjectFor: anObject
 	^ objects
 		at: anObject
 		ifAbsentPut: [| writableObject |
-			writableObject := anObject shallowCopy.
-			(anObject isReadOnlyObject and: [anObject class isImmediateClass not])
-				ifTrue: [writableObject setIsReadOnlyObject: true].
+			writableObject := thisContext simObjectClone: anObject.
+			((thisContext simObjectIsReadOnly: anObject) and: [(thisContext objectClass: anObject) isImmediateClass not])
+				ifTrue: [thisContext simObject: writableObject setIsReadOnly: true].
 			writableObject]

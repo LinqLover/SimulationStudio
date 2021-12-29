@@ -1,0 +1,1 @@
+I combine the features of PluggableDictionary and WeakKeyDictionary, i.e., clients can supply custom blocks for comparing and hasing my keys, and I hold weakly on my keys.

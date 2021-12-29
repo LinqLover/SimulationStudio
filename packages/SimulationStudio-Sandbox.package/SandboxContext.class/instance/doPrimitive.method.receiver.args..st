@@ -10,18 +10,18 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[18 "primitiveMakePoint"] -> [
 				accessIndirectors at: 1 put: #readableObjectFor:.
 				selector := #doPrimitiveNew:receiver:args:].
-			[38 "primitiveFloatAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[39 "primitiveFloatAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[38 "primitiveFloatAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[39 "primitiveFloatAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[40 "primitiveAsFloat"] -> [
 				accessIndirectors at: 1 put: #readableObjectFor:.
 				selector := #doPrimitiveNew:receiver:args:].
 			[60 "primitiveAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
 			[61 "primitiveAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[62 "primitiveSize"] -> [accessIndirectors atLast: 1 put: #readableObjectFor:].
-			[63 "primitiveStringAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[64 "primitiveStringAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
-			[68 "primitiveObjectAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[69 "primitiveObjectAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[63 "primitiveStringAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[64 "primitiveStringAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
+			[68 "primitiveObjectAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[69 "primitiveObjectAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[70 "primitiveNew"] -> [
 				selector := #doPrimitiveNew:receiver:args:.
 				accessIndirectors at: 1 put: #readableObjectFor:].
@@ -30,8 +30,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				accessIndirectors at: 1 put: #readableObjectFor:].
 			[72 "primitiveArrayBecomeOneWay"] -> [
 				^ self elements: rcvr forwardIdentityAndHashTo: arguments first].
-			[73 "primitiveInstVarAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[74 "primitiveInstVarAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[73 "primitiveInstVarAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[74 "primitiveInstVarAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[75 "primitiveIdentityHash"] -> [selector := #doPrimitiveHash:receiver:args:].
 			[76 "primitiveStoreStackp"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[77 "primitiveSomeInstance"] -> ["allowed"].
@@ -99,8 +99,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[140 "primitiveBeep"] -> [^ self activateOperationForbidden: 'primitiveBeep is disabled in sandbox simulation'].
 			[141 "primitiveClipboardText"] -> [^ self activateOperationForbidden: 'primitiveClipboardText is disabled in sandbox simulation'].
 			[142 "primitiveVMPath"] -> ["allowed"].
-			[143 "primitiveShortAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[144 "primitiveShortAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[143 "primitiveShortAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[144 "primitiveShortAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[145 "primitiveConstantFill"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[148 "primitiveClone"] -> [
 				selector := #doPrimitiveNew:receiver:args:.
@@ -111,15 +111,15 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 				at: 1 put: #readableObjectFor:;
 				at: 2 put: #writableObjectFor:].
 			[161 "primitiveSetOrHasIdentityHash"] -> [self shouldBeImplemented: 'primitiveSetOrHasIdentityHash'].
-			[163 "primitiveGetImmutability"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[163 "primitiveGetImmutability"] -> [accessIndirectors atLast: 1 put: #readableObjectFor:].
 			[164 "primitiveSetImmutability"] -> [selector := #doPrimitiveSetImmutability:receiver:args:].
-			[165 "primitiveIntegerAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[166 "primitiveIntegerAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[165 "primitiveIntegerAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[166 "primitiveIntegerAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[167 "primitiveYield"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[168 "primitiveCopyObject"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[169 "primitiveNotIdentical"] -> [accessIndirectors
-				at: 1 put: #readableObjectFor:;
-				at: 2 put: #readableObjectFor:].
+				atLast: 2 put: #readableObjectFor:;
+				atLast: 1 put: #readableObjectFor:].
 			[170 "primitiveAsCharacter"] -> [
 				accessIndirectors at: 1 put: #readableObjectFor:.
 				selector := #doPrimitiveNew:receiver:args:].
@@ -156,9 +156,9 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[197 "primitiveFindHandlerContext"] -> [
 				"Note: Usually, this primitive will not be called for thisContext during simulation. However, if that's what the client is after, don't fall for it but use the image implementation."
 				^ self class primitiveFailTokenFor: nil].
-			[210 "primitiveContextAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[211 "primitiveContextAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
-			[212 "primitiveContextSize"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
+			[210 "primitiveContextAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[211 "primitiveContextAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
+			[212 "primitiveContextSize"] -> [accessIndirectors atLast: 1 put: #readableObjectFor:].
 			[213 "primitiveContextXray"] -> [self shouldBeImplemented: 'primitiveContextXray'].
 			[214 "primitiveVoidVMState"] -> [self shouldBeImplemented: 'primitiveVoidVMState'].
 			[215 "primitiveFlushCacheByMethod"] -> [
@@ -168,8 +168,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[231 "primitiveForceDisplayUpdate"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[232 "primitiveFormPrint"] -> [^ self class primitiveFailTokenFor: nil "don't support"].
 			[233 "primitiveSetFullScreen"] -> [^ self activateOperationForbidden: 'primitiveSetFullScreen is disabled in sandbox simulation'].
-			[238 "primitiveFloatAt"] -> [accessIndirectors at: 1 put: #readableObjectFor:].
-			[239 "primitiveFloatAtPut"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[238 "primitiveFloatAt"] -> [accessIndirectors atLast: 2 put: #readableObjectFor:].
+			[239 "primitiveFloatAtPut"] -> [accessIndirectors atLast: 3 put: #writableObjectFor:].
 			[242 "primitiveSignalAtUTCMicroseconds"] -> [^ self activateOperationForbidden: 'primitiveSignalAtMilliseconds is disabled in sandbox simulation'].
 			[243 "primitiveUpdateTimezone"] -> [^ self class primitiveFailTokenFor: nil "don't support"].
 			[247 "primitiveSnapshotEmbedded"] -> [^ self activateOperationForbidden: 'primitiveSnapshotEmbedded is disabled in sandbox simulation'].

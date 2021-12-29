@@ -5,4 +5,5 @@ simBasicObjectIdentityHash: anObject
 	Primitive.  See Object documentation whatIsAPrimitive."
 
 	<primitive: 75>
+	self flag: #brittle. "This implementation relies on primitiveIdentityHash being implemented as a mirror primitive; however, the VM does not guarantee this. See: http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-December/217866.html"
 	^ self primitiveFailed

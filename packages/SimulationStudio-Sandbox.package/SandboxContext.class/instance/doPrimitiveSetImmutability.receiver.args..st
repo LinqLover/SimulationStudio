@@ -2,7 +2,7 @@ private
 doPrimitiveSetImmutability: primitiveIndex receiver: rcvr args: arguments
 
 	| boolean result |
-	boolean := arguments first.
+	boolean := arguments last.
 	boolean isBoolean ifFalse: [
 		^ self class primitiveFailTokenFor: #'bad argument'].
 	(boolean and: [(self canBeImmutable: (sandbox readableObjectFor: rcvr)) not]) ifTrue: [

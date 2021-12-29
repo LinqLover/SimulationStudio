@@ -1,4 +1,4 @@
 running - timeout
 defaultTimeout
 
-	^ super defaultTimeout * 2
+	^ super defaultTimeout * 3
