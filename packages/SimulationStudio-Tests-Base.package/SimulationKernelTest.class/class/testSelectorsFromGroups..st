@@ -14,8 +14,9 @@ testSelectorsFromGroups: testGroups
 						(testClass perform: selectors) tests
 							collect: #selector].
 					[selectors size >= 2 and: [selectors first = #-]] -> [
-						(testClass suite tests collect: #selector)
-							copyWithoutAll: (selectors allButFirst)] }
+						(testClass suite tests collect: #selector as: OrderedCollection)
+							removeAll: selectors allButFirst withoutDuplicates;
+							yourself] }
 				otherwise: [selectors])
 					collect: [:selector | self testSelectorForClass: testClass selector: selector]
 					thenDo: [:pair | stream nextPut: pair]]]
