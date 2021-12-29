@@ -1,9 +1,8 @@
 recording
 basicSimulate: simulatedBlock do: simulatorBlock chain: simulatorArray
 
-	| result |
-	timeToRun := [result := super
+	^ [super
 		basicSimulate: simulatedBlock
 		do: simulatorBlock
-		chain: simulatorArray] timeToRun milliSeconds.
-	^ result
+		chain: simulatorArray]
+			valueAndStoreTimeToRun: [:duration | timeToRun := duration]
