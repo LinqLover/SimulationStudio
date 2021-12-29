@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	
-	objects := PluggableWeakKeyDictionary new
+	objects := SimPluggableWeakKeyDictionary new
 		"Simulation-safe WeakIdentityKeyDictionary. We must not send any message to any simulated object here (the object could inject arbitrary code in the executor by this, or it might simply not understand the message and raise an error). Use mirror primitives for identity and hash testing."
 		equalBlock: [:first :second | thisContext object: first eqeq: second];
 		hashBlock: [:object | thisContext simObjectIdentityHash: object];

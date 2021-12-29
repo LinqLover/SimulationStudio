@@ -19,11 +19,13 @@
 		"exportMemory" : "ct 3/6/2021 01:38",
 		"hashFor:" : "ct 1/10/2021 21:40",
 		"importMemory:" : "ct 3/6/2021 01:39",
-		"initialize" : "ct 12/27/2021 00:55",
+		"initialize" : "ct 12/29/2021 14:40",
+		"lookupSelector:inClass:" : "ct 12/29/2021 01:55",
 		"patchObject:with:" : "ct 3/6/2021 13:25",
 		"readableObjectFor:" : "ct 12/28/2020 21:24",
 		"registerStep" : "ct 12/31/2020 02:05",
+		"simulatedClass:compiledMethodAt:ifPresent:" : "ct 12/28/2021 22:18",
 		"stepCount" : "ct 12/31/2020 01:54",
 		"stepLimit" : "ct 3/5/2021 23:27",
 		"stepLimit:" : "ct 3/5/2021 23:27",
-		"writableObjectFor:" : "ct 3/22/2021 22:04" } }
+		"writableObjectFor:" : "ct 12/29/2021 14:46" } }
