@@ -13,6 +13,7 @@
 		"initializeFrom:" : "ct 11/12/2021 23:27",
 		"jump:" : "ct 11/13/2021 15:13",
 		"jump:if:" : "ct 11/13/2021 15:13",
+		"lookupSelector:inClass:" : "ct 12/29/2021 01:54",
 		"methodReturnConstant:" : "ct 11/13/2021 15:14",
 		"methodReturnReceiver" : "ct 11/12/2021 17:49",
 		"methodReturnTop" : "ct 11/12/2021 17:49",

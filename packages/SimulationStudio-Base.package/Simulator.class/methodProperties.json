@@ -29,6 +29,7 @@
 		"context:doPushReceiver:" : "ct 11/12/2021 18:49",
 		"context:jump:do:" : "ct 11/13/2021 15:41",
 		"context:jump:if:do:" : "ct 11/13/2021 15:41",
+		"context:lookupSelector:inClass:do:" : "ct 12/29/2021 01:54",
 		"context:methodReturnConstant:do:" : "ct 11/13/2021 15:41",
 		"context:popIntoLiteralVariable:do:" : "ct 11/13/2021 15:41",
 		"context:popIntoReceiverVariable:do:" : "ct 11/13/2021 15:41",
