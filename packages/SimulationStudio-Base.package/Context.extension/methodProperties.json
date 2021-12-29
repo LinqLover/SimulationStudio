@@ -8,7 +8,10 @@
 		"debug" : "ct 3/5/2021 02:21",
 		"insertEnsure:" : "ct 3/5/2021 19:35",
 		"insertOn:do:" : "ct 3/5/2021 19:35",
-		"simBasicObjectIdentityHash:" : "ct 12/28/2021 17:48",
+		"simBasicObjectIdentityHash:" : "ct 12/29/2021 15:00",
 		"simCustomizationLevel" : "ct 3/5/2021 19:23",
+		"simObject:setIsReadOnly:" : "ct 12/29/2021 14:59",
+		"simObjectClone:" : "ct 12/29/2021 15:00",
 		"simObjectIdentityHash:" : "ct 12/28/2021 19:26",
+		"simObjectIsReadOnly:" : "ct 12/29/2021 15:00",
 		"wrap:" : "ct 3/5/2021 19:30" } }

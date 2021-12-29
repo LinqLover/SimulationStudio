@@ -2,7 +2,7 @@ controlling
 context: aContext doPrimitiveSetImmutability: primitiveIndex receiver: rcvr args: arguments
 
 	| boolean result |
-	boolean := arguments first.
+	boolean := arguments last.
 	boolean isBoolean ifFalse: [
 		^ self context: aContext primitiveFailTokenFor: #'bad argument'].
 	(boolean and: [(self context: aContext canBeImmutable: (self readableObjectFor: rcvr)) not]) ifTrue: [
