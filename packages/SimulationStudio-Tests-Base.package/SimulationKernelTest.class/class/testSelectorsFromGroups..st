@@ -20,7 +20,7 @@ testSelectorsFromGroups: testGroups
 							allSelectors remove: selector ifAbsent: [
 								thisContext simCustomizationLevel isZero ifTrue: [
 									self flag: #workaround. "Critical sections not yet supported in Sandbox execution. See: https://github.com/LinqLover/SimulationStudio/issues/19"
-									Transcript showln: 'Skipping non-existent test '; show: self]]].
+									Transcript showln: 'Skipping non-existent test '; show: testClass; show: '>>'; show: selector]]].
 							allSelectors]}
 				otherwise: [selectors])
 					collect: [:selector | self testSelectorForClass: testClass selector: selector]
