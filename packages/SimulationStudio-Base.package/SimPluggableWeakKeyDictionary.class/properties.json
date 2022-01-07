@@ -1,10 +1,10 @@
 {
-	"category" : "SimulationStudio-Sandbox",
+	"category" : "SimulationStudio-Base",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "ct 1/7/2022 18:50",
 	"instvars" : [
 		"hashBlock",
 		"equalBlock" ],
