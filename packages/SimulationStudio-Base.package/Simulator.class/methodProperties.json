@@ -58,6 +58,7 @@
 		"context:storeIntoRemoteTemp:inVectorAt:do:" : "ct 11/13/2021 15:44",
 		"context:storeIntoTemporaryVariable:do:" : "ct 11/13/2021 15:44",
 		"context:tryNamedPrimitiveIn:for:withArgs:do:" : "ct 11/13/2021 15:19",
+		"customize:" : "ct 1/7/2022 20:02",
 		"debug:" : "ct 11/13/2021 17:06",
 		"evaluate:" : "ct 11/13/2021 17:06",
 		"initializeContext:" : "ct 11/13/2021 00:19",
