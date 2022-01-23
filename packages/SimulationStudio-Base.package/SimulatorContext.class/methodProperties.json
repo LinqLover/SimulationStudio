@@ -41,6 +41,7 @@
 		"send:to:with:lookupIn:" : "ct 11/13/2021 15:09",
 		"sendSpecial:numArgs:" : "ct 11/13/2021 15:17",
 		"simulatedObject:instVarAt:put:" : "ct 11/13/2021 02:02",
+		"singleRelease" : "ct 1/23/2022 03:39",
 		"step" : "ct 11/13/2021 20:22",
 		"storeIntoLiteralVariable:" : "ct 11/13/2021 15:17",
 		"storeIntoReceiverVariable:" : "ct 11/13/2021 15:17",
