@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 1/23/2022 01:59",
+	"instvars" : [
+		"pcsPerMethod" ],
+	"name" : "CoverageSimulator",
+	"pools" : [
+		 ],
+	"super" : "Simulator",
+	"type" : "normal" }
