@@ -13,6 +13,7 @@
 		"warmUp" : "ct 11/12/2021 19:40",
 		"warmUpContextClasses" : "ct 11/12/2021 19:40" },
 	"instance" : {
+		"allSimulators" : "ct 11/18/2021 22:45",
 		"basicSimulate:do:" : "ct 11/13/2021 17:07",
 		"basicSimulate:do:chain:" : "ct 11/13/2021 17:07",
 		"context:activateMethod:withArgs:receiver:do:" : "ct 11/13/2021 15:45",

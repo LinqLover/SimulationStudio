@@ -13,6 +13,7 @@
 	"instance" : {
 		"activateMethod:withArgs:receiver:" : "ct 11/12/2021 21:05",
 		"activateReturn:value:" : "ct 11/12/2021 21:05",
+		"allSimulators" : "ct 11/18/2021 22:44",
 		"at:" : "ct 12/28/2020 19:14",
 		"at:put:" : "ct 12/28/2020 19:14",
 		"basicAt:" : "ct 12/28/2020 19:14",
