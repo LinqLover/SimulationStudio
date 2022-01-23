@@ -11,6 +11,7 @@
 		"testCustomizationLevel" : "ct 3/5/2021 19:24",
 		"testCustomize" : "ct 3/5/2021 19:25",
 		"testDecustomize" : "ct 3/5/2021 19:25",
+		"testExceptionHandlerAroundSimulator" : "ct 1/23/2022 01:19",
 		"testInsertEnsure" : "ct 3/24/2021 23:48",
 		"testInsertEnsureWithError" : "ct 3/24/2021 23:49",
 		"testInsertOnDo" : "ct 3/24/2021 23:52",
