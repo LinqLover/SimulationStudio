@@ -9,7 +9,7 @@ testGroups
 		#testSetUp flag: #workaround. "uses Compiler/FilePlugin currently disabled in sandbox"}).
 	
 	self assert: (groups at: self) first ~= #-.
-	groups at: self put: ((groups at: self) , {#-.
+	groups at: self put: ((groups at: self) copyWithoutAll: {
 		#testContextRunUntilErrorOrReturnFromError flag: #todo "weird sporadic sandbox mismatches".
 		#testContextRunUntilErrorOrReturnFromNoError flag: #todo "weird sporadic sandbox mismatches"}).
 	
