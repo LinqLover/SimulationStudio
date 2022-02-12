@@ -5,6 +5,7 @@
 		"fromSimulationContext:" : "ct 3/5/2021 19:41",
 		"runSimulated:" : "ct 11/14/2021 02:06" },
 	"instance" : {
+		"canSimulateYourself" : "ct 2/12/2022 15:12",
 		"debug" : "ct 12/30/2021 14:28",
 		"insertEnsure:" : "ct 3/5/2021 19:35",
 		"insertOn:do:" : "ct 3/5/2021 19:35",
