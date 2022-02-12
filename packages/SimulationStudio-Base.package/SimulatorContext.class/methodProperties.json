@@ -11,6 +11,7 @@
 		"doDup" : "ct 11/12/2021 17:49",
 		"doPop" : "ct 11/12/2021 17:50",
 		"doPrimitive:method:receiver:args:" : "ct 11/13/2021 15:08",
+		"failPrimitiveWith:" : "ct 2/4/2022 20:58",
 		"initializeFrom:" : "ct 11/12/2021 23:27",
 		"jump:" : "ct 11/13/2021 15:13",
 		"jump:if:" : "ct 11/13/2021 15:13",
