@@ -29,7 +29,7 @@ runSimulated: aBlock contextAtEachStep: anotherBlock
 	
 	current := self customize: current.
 	
-	(anotherBlock numArgs = 0
+	((home canSimulateYourself and: [anotherBlock numArgs = 0])
 		ifTrue: ["optimized" [resume]]
 		ifFalse: ["stop execution on time, don't expose simulation details to caller"
 			[(current sender == ensure and: [current willReturn]) or: 

@@ -16,6 +16,7 @@
 		"allSimulators" : "ct 11/18/2021 22:45",
 		"basicSimulate:do:" : "ct 11/13/2021 17:07",
 		"basicSimulate:do:chain:" : "ct 11/13/2021 17:07",
+		"canContextSimulateItself:do:" : "ct 2/12/2022 15:17",
 		"context:activateMethod:withArgs:receiver:do:" : "ct 11/13/2021 15:45",
 		"context:blockReturnConstant:do:" : "ct 11/13/2021 15:19",
 		"context:callPrimitive:do:" : "ct 11/13/2021 15:40",
