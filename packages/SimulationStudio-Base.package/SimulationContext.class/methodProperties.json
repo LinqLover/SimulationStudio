@@ -28,6 +28,7 @@
 		"initialize" : "ct 3/2/2021 23:01",
 		"initializeFrom:" : "ct 12/28/2020 19:43",
 		"initializeStack" : "ct 3/2/2021 23:01",
+		"isSimulationContext" : "ct 3/14/2022 19:20",
 		"lookupSelector:inClass:" : "ct 12/29/2021 14:53",
 		"pop" : "ct 12/28/2020 19:07",
 		"printOn:" : "ct 12/28/2020 15:49",
