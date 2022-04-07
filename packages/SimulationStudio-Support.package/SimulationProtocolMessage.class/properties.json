@@ -1,0 +1,19 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 4/8/2022 01:10",
+	"instvars" : [
+		"receiver",
+		"selector",
+		"result",
+		"error",
+		"state",
+		"hasSideEffects" ],
+	"name" : "SimulationProtocolMessage",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
