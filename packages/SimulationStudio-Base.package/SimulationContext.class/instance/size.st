@@ -1,4 +1,4 @@
 accessing - stack patching
 size
 
-	^ stack size
+	^ stackp

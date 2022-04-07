@@ -20,8 +20,7 @@ baseline: spec
 		"test packages"
 		spec
 			package: 'SimulationStudio-Tests-Base' with: [
-				spec requires: 'SimulationStudio-Base'.
-				spec postLoadDoIt: #installPreviewDependenciesForTests];
+				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Tests-Support' with: [
 				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
 			package: 'SimulationStudio-Tests-Sandbox' with: [

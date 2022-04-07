@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"example" : "ct 11/19/2021 16:52",
+		"todo" : "ct 1/23/2022 01:41" },
+	"instance" : {
+		"allPCsIn:" : "ct 11/19/2021 16:20",
+		"allPCsIn:do:" : "ct 11/19/2021 16:24",
+		"context:step:" : "ct 11/19/2021 16:07",
+		"coverageOf:" : "ct 11/19/2021 16:18",
+		"coveredPCsIn:" : "ct 11/19/2021 16:16",
+		"coveredSourceOf:" : "ct 11/19/2021 16:34",
+		"coveredSymbolicOf:" : "ct 11/19/2021 16:45",
+		"initialize" : "ct 11/19/2021 16:08",
+		"uncoveredPCsIn:" : "ct 11/19/2021 16:17" } }
