@@ -1,0 +1,4 @@
+private
+messageClass
+
+	^ SimulationProtocolMessage

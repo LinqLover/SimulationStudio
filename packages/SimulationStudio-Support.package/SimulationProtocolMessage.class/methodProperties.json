@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"receiver:selector:" : "ct 12/29/2021 22:49" },
+	"instance" : {
+		"assureResult" : "ct 12/29/2021 23:23",
+		"debug" : "ct 12/29/2021 23:48",
+		"evaluate" : "ct 12/30/2021 00:41",
+		"hasError" : "ct 12/29/2021 23:15",
+		"hasResult" : "ct 12/30/2021 00:33",
+		"hasRun" : "ct 12/29/2021 23:15",
+		"hasSideEffects" : "ct 12/29/2021 22:52",
+		"ifResult:ifError:" : "ct 12/29/2021 23:45",
+		"ifResult:ifError:ifPending:" : "ct 12/29/2021 22:51",
+		"perform" : "ct 12/29/2021 23:48",
+		"printOn:" : "ct 12/30/2021 00:22",
+		"receiver" : "ct 12/29/2021 22:50",
+		"receiver:" : "ct 12/29/2021 22:49",
+		"result" : "ct 12/29/2021 23:18",
+		"resultOrError" : "ct 12/29/2021 23:17",
+		"sandboxClass" : "ct 12/29/2021 22:57",
+		"selector" : "ct 12/29/2021 22:50",
+		"selector:" : "ct 12/29/2021 22:49",
+		"state" : "ct 12/29/2021 22:52",
+		"theError" : "ct 12/29/2021 23:17" } }
