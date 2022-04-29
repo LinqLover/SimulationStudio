@@ -1,15 +1,17 @@
 {
 	"class" : {
 		"basicContextClass" : "ct 11/12/2021 18:36",
-		"cleanUp" : "ct 11/12/2021 19:40",
+		"cleanUp" : "ct 2/4/2022 00:35",
 		"cleanUpContextClasses" : "ct 11/12/2021 19:39",
+		"cleanUpRequiredCapabilities" : "ct 2/4/2022 00:35",
 		"contextClassForCapabilities:" : "ct 11/13/2021 21:12",
 		"contextClassForSimulators:" : "ct 11/12/2021 18:36",
 		"debug:" : "ct 11/13/2021 15:46",
 		"decorating:" : "ct 11/11/2021 21:47",
 		"evaluate:" : "ct 11/11/2021 22:07",
 		"fullContextClass" : "ct 11/12/2021 18:36",
-		"noteAddedSelector:meta:" : "ct 11/13/2021 20:13",
+		"noteAddedSelector:meta:" : "ct 2/4/2022 00:35",
+		"requiredCapabilities" : "ct 2/4/2022 00:40",
 		"warmUp" : "ct 11/12/2021 19:40",
 		"warmUpContextClasses" : "ct 11/12/2021 19:40" },
 	"instance" : {
@@ -68,4 +70,4 @@
 		"initializeContext:" : "ct 11/13/2021 00:19",
 		"nextSimulator" : "ct 11/11/2021 21:47",
 		"nextSimulator:" : "ct 11/11/2021 21:47",
-		"requiredCapabilities" : "ct 11/13/2021 22:11" } }
+		"requiredCapabilities" : "ct 2/4/2022 00:31" } }
