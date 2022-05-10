@@ -40,7 +40,7 @@ doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: arguments
 				(#('primitiveHighResClock' 'primitiveUtcWithOffset' 'primitiveUtcWithOffset') includes: primitiveName)
 					ifTrue: ["allowed"]
 					ifFalse: [^ self activateOperationForbidden: ('Unknown primitive {1} not available in simulation' format: {primitiveName})]] }
-		otherwise: [":pluginName |" ^ self activateOperationForbidden: ('Unknown plugin {1} not available in simulation' format: {literal first})].
+		otherwise: [:pluginName | ^ self activateOperationForbidden: ('Unknown plugin {1} not available in simulation' format: {pluginName})].
 	
 	directRcvrAndArgs := self
 		access: (arguments copyWithFirst: rcvr)
