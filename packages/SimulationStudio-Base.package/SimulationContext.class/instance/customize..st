@@ -4,5 +4,5 @@ customize: aContext
 
 	aContext == self ifTrue: [^ aContext].
 	aContext ifNil: [^ nil].
-	(aContext isKindOf: self class) ifTrue: [^ aContext].
+	(aContext matchesSimulationContext: self) ifTrue: [^ aContext].
 	^ self basicCustomize: aContext
