@@ -11,12 +11,13 @@
 		"fullContextClass" : "ct 11/12/2021 18:36",
 		"noteAddedSelector:meta:" : "ct 11/13/2021 20:13",
 		"warmUp" : "ct 11/12/2021 19:40",
-		"warmUpContextClasses" : "ct 11/12/2021 19:40" },
+		"warmUpContextClasses" : "ct 5/10/2022 22:14" },
 	"instance" : {
 		"allSimulators" : "ct 11/18/2021 22:45",
 		"basicSimulate:do:" : "ct 11/13/2021 17:07",
 		"basicSimulate:do:chain:" : "ct 11/13/2021 17:07",
 		"canContextSimulateItself:do:" : "ct 2/12/2022 15:17",
+		"capabilityPragmas" : "ct 5/2/2022 19:54",
 		"context:activateMethod:withArgs:receiver:do:" : "ct 11/13/2021 15:45",
 		"context:blockReturnConstant:do:" : "ct 11/13/2021 15:19",
 		"context:callPrimitive:do:" : "ct 11/13/2021 15:40",
@@ -69,4 +70,4 @@
 		"nextSimulator" : "ct 11/11/2021 21:47",
 		"nextSimulator:" : "ct 11/11/2021 21:47",
 		"printOn:" : "ct 5/2/2022 11:16",
-		"requiredCapabilities" : "ct 11/13/2021 22:11" } }
+		"requiredCapabilities" : "ct 5/2/2022 19:54" } }
