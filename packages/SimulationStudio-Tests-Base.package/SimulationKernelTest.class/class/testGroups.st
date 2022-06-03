@@ -8,10 +8,10 @@ testGroups
 		at: #ByteArrayTest put: {#-.
 			#testPlatformIndependentIntegerAccessorsAtBitBorders. #testPlatformIndependentIntegerAccessorsWithRandomValues "large"};
 		at: #ContextTest put: {#-.
+			#testMessageNotUnderstood. "too expensive"
 			#testRestart flag: #workaround. "uses Delay/control primitives which raises a Warning during simulation since Kernel-ct.1381 (inbox)"
 			#testRunUntilErrorOrReturnFromError. #testRunUntilErrorOrReturnFromNoError. "Context>>runUntilErrorOrReturnFrom: does not turn off simulation again"
 			#testSetUp flag: #workaround. "uses Compiler/Semaphore control primitive which raises a Warning during simulation since Kernel-ct.1381 (inbox)"};
-		at: self put: super allTestSelectors;
 		at: #DoubleByteArrayTest put: {#-.
 			#testAllPossibleValues "large"};
 		at: #DoubleWordArrayTest put: #suite;
@@ -31,4 +31,5 @@ testGroups
 		at: #UndefinedObjectTest put: #suite;
 		at: #WriteBarrierTest put: #suite;
 		at: #WordArrayTest put: #suite;
+		at: self put: super allTestSelectors;
 		yourself
