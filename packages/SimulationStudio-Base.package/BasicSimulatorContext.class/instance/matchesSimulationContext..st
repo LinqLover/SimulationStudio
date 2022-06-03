@@ -1,4 +1,4 @@
-nil
+testing
 matchesSimulationContext: aSimulationContext
 
 	^ (super matchesSimulationContext: aSimulationContext)
