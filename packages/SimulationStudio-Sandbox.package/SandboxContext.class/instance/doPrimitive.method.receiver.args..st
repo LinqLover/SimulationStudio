@@ -134,9 +134,7 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[177 "primitiveAllInstances"] -> ["allowed"].
 			[178 "primitiveAllObjects"] -> ["allowed"].
 			[180 "primitiveGrowMemoryByAtLeast"] -> [^ self activateOperationForbidden: 'primitiveGrowMemoryByAtLeast is disabled in sandbox simulation'].
-			[181 "primitiveSizeInBytesOfInstance"] -> [
-				self flag: #shouldBeImplemented.
-				^ self activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].
+			[181 "primitiveSizeInBytesOfInstance"] -> ["allowed"].
 			[182 "primitiveSizeInBytes"] -> [
 				self flag: #shouldBeImplemented.
 				^ self activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].

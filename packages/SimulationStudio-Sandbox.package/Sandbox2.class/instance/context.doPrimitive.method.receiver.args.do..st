@@ -134,9 +134,7 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[177 "primitiveAllInstances"] -> ["allowed"].
 			[178 "primitiveAllObjects"] -> ["allowed"].
 			[180 "primitiveGrowMemoryByAtLeast"] -> [^ self context: aContext activateOperationForbidden: 'primitiveGrowMemoryByAtLeast is disabled in sandbox simulation'].
-			[181 "primitiveSizeInBytesOfInstance"] -> [
-				self flag: #shouldBeImplemented.
-				^ self activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].
+			[181 "primitiveSizeInBytesOfInstance"] -> ["allowed"].
 			[182 "primitiveSizeInBytes"] -> [
 				self flag: #shouldBeImplemented.
 				^ self activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].
