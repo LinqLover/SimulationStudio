@@ -5,7 +5,7 @@ testMirrorClone
 	stackpBefore := thisContext stackPtr.
 	
 	original := #(1 2 3).
-	copy := thisContext simObjectClone: original.
+	copy := thisContext simObjectShallowCopy: original.
 	self deny: copy == original.
 	self assert: copy = original.
 	
