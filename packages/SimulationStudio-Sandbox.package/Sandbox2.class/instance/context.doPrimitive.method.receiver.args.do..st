@@ -145,6 +145,22 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[185 "primitiveExitCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
 			[186 "primitiveEnterCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
 			[187 "primitiveTestAndSetOwnershipOfCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
+			[188 "primitiveExecuteMethodArgsArray"] -> [
+				"Prevent Context from executing quick methods directly without dispatching via this method"
+				| method |
+				arguments size >= 2 ifTrue: [
+					(aContext objectClass: (method := arguments last)) isCompiledMethodClass
+						and: [method isQuick ifTrue:
+							[^ aContext doPrimitive: method primitive method: method receiver: receiver args:
+								(arguments atLast: 2)]]]].
+			[189 "primitiveExecuteMethod"] -> [
+				"Prevent Context from executing quick methods directly without dispatching via this method"
+				| method |
+				arguments size = 1 ifTrue: [
+					(aContext objectClass: (method := arguments last)) isCompiledMethodClass
+						and: [method isQuick ifTrue:
+							[^ aContext doPrimitive: method primitive method: method receiver: receiver args:
+								arguments allButLast]]]].
 			[195 "primitiveFindNextUnwindContext"] -> [
 				"Note: Usually, this primitive will not be called for thisContext during simulation. However, if that's what the client is after, don't fall for it but use the image implementation."
 				^ self context: aContext primitiveFailTokenFor: nil].
