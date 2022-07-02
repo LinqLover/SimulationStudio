@@ -5,6 +5,7 @@
 		"sandboxClass" : "ct 11/13/2021 16:05",
 		"testBitBlt" : "ct 11/13/2021 00:00",
 		"testCannotUsurpExecution" : "ct 11/13/2021 00:01",
+		"testExecuteQuickMethod" : "ct 7/1/2022 18:45",
 		"testFindSelectors" : "ct 12/27/2021 00:32",
 		"testIdentityHashConstant" : "ct 11/13/2021 00:01",
 		"testMemoryHashes" : "ct 11/13/2021 00:01",
