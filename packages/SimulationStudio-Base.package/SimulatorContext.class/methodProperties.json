@@ -41,6 +41,7 @@
 		"return:from:" : "ct 11/13/2021 15:16",
 		"runSimulated:contextAtEachStep:" : "ct 11/13/2021 02:02",
 		"send:super:numArgs:" : "ct 11/13/2021 15:16",
+		"send:to:with:" : "ct 7/5/2022 12:26",
 		"send:to:with:lookupIn:" : "ct 11/13/2021 15:09",
 		"sendSpecial:numArgs:" : "ct 11/13/2021 15:17",
 		"simulatedObject:instVarAt:put:" : "ct 11/13/2021 02:02",
