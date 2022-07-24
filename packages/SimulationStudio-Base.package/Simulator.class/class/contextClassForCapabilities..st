@@ -10,6 +10,7 @@ contextClassForCapabilities: capabilities
 		ifAbsentPut: [ | class |
 			class := SystemChangeNotifier uniqueInstance doSilently:
 				[self basicContextClass newSubclass].
+			class environment: class superclass environment. "for debugging/browsing convenience"
 			capabilities do: [:selector |
 				class
 					addSelectorSilently: selector
