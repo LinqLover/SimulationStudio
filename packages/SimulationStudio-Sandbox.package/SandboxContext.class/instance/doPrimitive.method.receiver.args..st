@@ -39,8 +39,8 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[79 "primitiveNewMethod"] -> [
 				selector := #doPrimitiveNew:receiver:args:.
 				accessIndirectors at: 1 put: #readableObjectFor:].
-			[85 "primitiveSignal"] -> [accessIndirectors at: 1 put: #writableObjectFor: "External processes will not be signaled"].
-			[86 "primitiveWait"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[85 "primitiveSignal"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
+			[86 "primitiveWait"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[87 "primitiveResume"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[88 "primitiveSuspend"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[89 "primitiveFlushCache"] -> [self flag: #shouldBeImplemented].
@@ -56,9 +56,6 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[103 "primitiveScanCharacters"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[105 "primitiveStringReplace"] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[106 "primitiveScreenSize"] -> ["allowed"].
-			[107 "primitiveMouseButtons"] -> ["allowed"].
-			[108 "primitiveKbdNext"] -> [^ self activateOperationForbidden: 'primitiveKbdNext is disabled in sandbox simulation'].
-			[109 "primitiveKbdPeek"] -> ["allowed"].
 			[110 "primitiveIdentical"] -> [accessIndirectors
 				atLast: 2 put: #readableObjectFor:;
 				atLast: 1 put: #readableObjectFor:].
@@ -189,12 +186,14 @@ doPrimitive: primitiveIndex method: meth receiver: rcvr args: arguments
 			[247 "primitiveSnapshotEmbedded"] -> [^ self activateOperationForbidden: 'primitiveSnapshotEmbedded is disabled in sandbox simulation'].
 			[248 "primitiveArrayBecomeOneWayNoCopyHash"] -> [
 				^ self elements: rcvr forwardIdentityTo: arguments first].
-			[249 "primitiveArrayBecomeOneWayCopyHash"] -> [
+			[249 "primitiveArrayBecomeOneWayCopyHashArg"] -> [
 				^ self elements: rcvr forwardIdentityTo: arguments first copyHash: arguments second].
+			[568 "primitiveSuspendBackingUpV1"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[570 "primitiveFlushExternalPrimitives"] -> [^ self activateOperationForbidden: 'primitiveFlushExternalPrimitives is disabled in sandbox simulation'].
 			[571 "primitiveUnloadModule"] -> [^ self activateOperationForbidden: 'primitiveUnloadModule is disabled in sandbox simulation'].
 			[572 "primitiveListBuiltinModule"] -> ["allowed"].
 			[573 "primitiveListExternalModule"] -> ["allowed"].
+			[578 "primitiveSuspendBackingUpV2"] -> [^ self activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 		}
 		otherwise: [
 			(primitiveIndex >= 250 and: [primitiveIndex <= 254]) "VM implementor primitives"
