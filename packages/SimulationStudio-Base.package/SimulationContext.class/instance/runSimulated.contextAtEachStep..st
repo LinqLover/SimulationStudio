@@ -32,10 +32,14 @@ runSimulated: aBlock contextAtEachStep: anotherBlock
 	((home canSimulateYourself and: [anotherBlock numArgs = 0])
 		ifTrue: ["optimized" [resume]]
 		ifFalse: ["stop execution on time, don't expose simulation details to caller"
+			| methodResume methodResumeThrough |
+			"remember the original compiledMethod to prevent the simulated code from stealing the stack by modifying Context methods"
+			methodResume := Context >> #resume:.
+			methodResumeThrough := Context >> #resume:through:.
 			[(current sender == ensure and: [current willReturn]) or: 
 				["Context >> #resume:"
 				(self objectClass: current receiver) simIsContextClass
-					and: [(current selector == #resume: or: [current selector == #resume:through:])
+					and: [(current method == methodResume or: [current method == methodResumeThrough])
 					and: [current size >= 2]
 					and: [(current at: 2) == ensure]]]]	])
 		whileFalse:
