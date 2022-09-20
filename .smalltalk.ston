@@ -8,9 +8,9 @@ SmalltalkCISpec {
 		}
 	],
 	#testing : {
-		#packages : [ 'SimulationStudio-Tests-Base', 'SimulationStudio-Tests-Sandbox', 'SimulationStudio-Tests-Support' ],
+		#packages : [ 'SimulationStudio-Tests-Base', 'SimulationStudio-Tests-Sandbox', 'SimulationStudio-Tests-Support', 'SimulationStudio-Tests-Tools' ],
 		#coverage : {
-			#packages : [ 'SimulationStudio-Base', 'SimulationStudio-Sandbox', 'SimulationStudio-Support' ]
+			#packages : [ 'SimulationStudio-Base', 'SimulationStudio-Sandbox', 'SimulationStudio-Support', 'SimulationStudio-Tools' ]
 		}
 	}
 }
