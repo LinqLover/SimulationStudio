@@ -77,7 +77,7 @@ streamMatchesOn: aWriteStream
 						omittedRcvrargs ifEmpty:
 							["a) Send message and test the result"
 							self trySendAndMatch: usedReceiverValue selector: selector arguments: usedArgValues ifMatch: [:result |
-								transcripter ifNotNil: [transcripter showln: '	match: '; show: result].
+								transcripter ifNotNil: [transcripter showln: '	match: '; show: ([result printString] ifError: ['<print error (a {1})>' format: {result class}])].
 								aWriteStream nextPut:
 									(expression withValue: result)]].
 						
@@ -85,7 +85,7 @@ streamMatchesOn: aWriteStream
 							["b) Send message and store the intermediate result in the queue"
 							| matchResult |
 							matchResult := self trySend: usedReceiverValue selector: selector arguments: usedArgValues ifSuccess: [:result |
-								transcripter ifNotNil: [transcripter showln: '	intermediate: '; show: result].
+								transcripter ifNotNil: [transcripter showln: '	intermediate: '; show: ([result printString] ifError: ['<print error (a {1})>' format: {result class}])].
 								result == usedReceiverValue ifFalse:
 									[transcripter ifNotNil: [transcripter show: ' (enqueue)'].
 									self flag: #forLater. "Add option to reuse arguments"
