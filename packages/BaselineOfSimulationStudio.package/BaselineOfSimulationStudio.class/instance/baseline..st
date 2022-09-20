@@ -26,9 +26,11 @@ baseline: spec
 			package: 'SimulationStudio-Tests-Sandbox' with: [
 				spec requires: #('SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
 			package: 'SimulationStudio-Tests-Support' with: [
-				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')].
+				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
+			package: 'SimulationStudio-Tests-Tools' with: [
+				spec requires: #('SimulationStudio-Tools' 'SimulationStudio-Tests-Base')].
 		
 		"groups"
 		spec
-			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support');
-			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support')].
+			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools');
+			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools')].

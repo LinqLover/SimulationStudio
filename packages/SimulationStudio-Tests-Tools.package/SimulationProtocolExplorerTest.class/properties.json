@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Tests-Tools-ProtocolExplorer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"explorer",
+		"window" ],
+	"name" : "SimulationProtocolExplorerTest",
+	"pools" : [
+		 ],
+	"super" : "SimulationTestCase",
+	"type" : "normal" }
