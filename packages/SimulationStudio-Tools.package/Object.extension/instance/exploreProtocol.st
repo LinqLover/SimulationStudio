@@ -1,4 +1,4 @@
-*SimulationStudio-Support-APIExplorer
+*SimulationStudio-Tools-ProtocolExplorer
 exploreProtocol
 
 	^ SimulationProtocolExplorer openOn: self
