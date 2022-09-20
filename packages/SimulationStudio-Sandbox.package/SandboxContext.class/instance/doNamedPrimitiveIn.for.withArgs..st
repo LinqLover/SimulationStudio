@@ -30,14 +30,17 @@ doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: arguments
 					writableObject]].
 			[#CroquetPlugin] -> ["allowed"].
 			[#FilePlugin] -> [^ self activateOperationForbidden: 'FilePlugin not available in simulation'].
+			[#FloatArrayPlugin] -> ["allowed"].
+			[#Float64ArrayPlugin] -> ["allowed"].
 			[#LargeIntegers] -> ["allowed"].
 			[#MiscPrimitivePlugin] -> [^ self class primitiveFailTokenFor: nil "use image implementation"].
 			[#SimulationStudio] -> ["allowed"].
+			[#UUIDPlugin] -> ["allowed"].
 			[nil] -> [
 				(#('primitiveHighResClock' 'primitiveUtcWithOffset' 'primitiveUtcWithOffset') includes: primitiveName)
 					ifTrue: ["allowed"]
 					ifFalse: [^ self activateOperationForbidden: ('Unknown primitive {1} not available in simulation' format: {primitiveName})]] }
-		otherwise: [":pluginName |" ^ self activateOperationForbidden: ('Unknown plugin {1} not available in simulation' format: {literal first})].
+		otherwise: [:pluginName | ^ self activateOperationForbidden: ('Unknown plugin {1} not available in simulation' format: {pluginName})].
 	
 	directRcvrAndArgs := self
 		access: (arguments copyWithFirst: rcvr)

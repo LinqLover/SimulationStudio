@@ -8,7 +8,11 @@ A developing suite of applications and tools for code simulation in [Squeak/Smal
 Currently included features:
 
 - **`SimulationStudio-Base`:** Provides abstract functionality for simulating stack frames by subclassing `SimulationContext` or `Simulator`.
-- **`SimulationStudio-Support`:** Contains several simulation goodies and examples such as the `BenchmarkSimulator` for hardware-independent benchmark creation or the `LimitSimulator` for hardware-independent calculation timeouts.
+- **`SimulationStudio-Support`:** Contains several simulation goodies and examples:
+  - the `BenchmarkSimulator` for hardware-independent benchmark creation
+  - the `CoverageSimulator` for bytecode-precise code coverage analysis
+  - the `LimitSimulator` for hardware-independent calculation timeouts
+  - the `SimulationProtocolExplorer` which inspects an object and its protocol together with a speculatively evaluated preview of each message ([screenshots](https://github.com/LinqLover/SimulationStudio/pull/39#issue-1090737789))
 - **`SimulationStudio-Sandbox`:** Execute Smalltalk code in an isolated environment without applying any side effects to the image.
   Also contains a light-weight alternative implementation of `MethodFinder` (see `Sandbox class >> #findSelectorsFor:arguments:thatAnswer:`).
 - **`SimulationStudio-Tracing` (experimental):**

@@ -1,0 +1,1 @@
+I represent an evaluable message of a SimulationProtocolExplorer.

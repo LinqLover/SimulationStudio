@@ -14,14 +14,13 @@ baseline: spec
 			package: 'SimulationStudio-Sandbox' with: [
 				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Support' with: [
-				spec requires: 'SimulationStudio-Base'];
+				spec requires: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
 			package: 'SimulationStudio-Tracing' with: [
 				spec requires: #('SimulationStudio-Base' 'MessageSendRecorder')].
 		"test packages"
 		spec
 			package: 'SimulationStudio-Tests-Base' with: [
-				spec requires: 'SimulationStudio-Base'.
-				spec postLoadDoIt: #installPreviewDependenciesForTests];
+				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Tests-Support' with: [
 				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
 			package: 'SimulationStudio-Tests-Sandbox' with: [

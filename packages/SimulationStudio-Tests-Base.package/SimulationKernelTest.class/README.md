@@ -1,0 +1,3 @@
+Kernel tests crash-test simulators by running large numbers of unit tests inside the simulator under test, and comparing the success of each test with its success when executed by the VM instead. This offers a cheaper way to test specific simulation capabilities without setting up large mock data manually, as we rely on the fact that the largest part of the simulation already works.
+
+To define which test cases should be run inside the simulator, subclasses can override the class-side selectors #testGroups and #expectedFailureGroups. They can also define new tests on the instance side to have them executed inside the simulator.

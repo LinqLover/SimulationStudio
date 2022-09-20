@@ -16,6 +16,7 @@ runUntilErrorOrReturnFrom: homeContext
 			error := (ctxt tempAt: 1) exception.
 			exit value].
 		ctxt closure == ensureBlock ifTrue: [
+			guardEnsure := ctxt sender. "possibly changed stack - e.g., TraceDebugger's TDBRangeRetracingSimulator does this for forks"
 			exit value].
 		ctxt := ctxt step
 	] repeat] valueWithExit.

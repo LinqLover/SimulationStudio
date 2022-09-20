@@ -1,0 +1,3 @@
+I am a prototypical tool that uses speculative code execution in a Sandbox to display a preview of all messages that an inspected object instance understands. I also indicate whether a message is purely functional or has any side effects.
+
+I try to fill the gap between behavior-centric views like code browsers on the one hand and state-centric views like inspectors or explorers on the other hand. See the todo comment on my class side.

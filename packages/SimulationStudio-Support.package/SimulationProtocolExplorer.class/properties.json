@@ -1,0 +1,19 @@
+{
+	"category" : "SimulationStudio-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 4/8/2022 01:14",
+	"instvars" : [
+		"object",
+		"classIndex",
+		"selectedCategory",
+		"selectedClasses",
+		"messages",
+		"selectedProtocolMessage" ],
+	"name" : "SimulationProtocolExplorer",
+	"pools" : [
+		 ],
+	"super" : "CodeHolder",
+	"type" : "normal" }

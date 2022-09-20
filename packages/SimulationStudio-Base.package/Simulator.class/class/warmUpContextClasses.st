@@ -1,5 +1,6 @@
 context classes
 warmUpContextClasses
 
-	self withAllSubclassesDo: [:class |
-		self contextClassForSimulators: {class basicNew}].
+	self contextClassForSimulators: {self new}.
+	self subclassesDo: [:class |
+		class warmUpContextClasses].

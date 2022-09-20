@@ -8,7 +8,9 @@ contextClassForCapabilities: capabilities
 	^ (ContextClasses ifNil: [ContextClasses := Dictionary new])
 		at: capabilities
 		ifAbsentPut: [ | class |
-			class := self basicContextClass newSubclass.
+			class := SystemChangeNotifier uniqueInstance doSilently:
+				[self basicContextClass newSubclass].
+			class environment: class superclass environment. "for debugging/browsing convenience"
 			capabilities do: [:selector |
 				class
 					addSelectorSilently: selector
