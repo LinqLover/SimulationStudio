@@ -39,7 +39,7 @@ Contains some programming tools that are implementation using simulation:
 
 - the `SimulationMethodFinder` which searches for all methods that convert a given set of inputs into a given output by speculatively executing all methods ([screenshots](https://github.com/LinqLover/SimulationStudio/pull/61#issue-1379779606))
   
-  [![Simulation Method Finder (recursive search)](https://user-images.githubusercontent.com/38782922/191326674-447447aa-f00c-4937-892d-3d060ed688e2.png)]((https://github.com/LinqLover/SimulationStudio/pull/61#issue-1379779606))
+  [![Simulation Method Finder (recursive search)](https://user-images.githubusercontent.com/38782922/191326674-447447aa-f00c-4937-892d-3d060ed688e2.png)](https://github.com/LinqLover/SimulationStudio/pull/61#issue-1379779606)
 
 - the `SimulationProtocolExplorer` which inspects an object and its protocol together with a speculatively evaluated preview of each message ([screenshots](https://github.com/LinqLover/SimulationStudio/pull/39#issue-1090737789))
 
