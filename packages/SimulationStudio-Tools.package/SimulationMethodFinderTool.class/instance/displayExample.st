@@ -20,6 +20,13 @@ displayExample
 	stream next ifNotNil: [:className | self outerSuperclass: (self environment classNamed: className)].
 	stream next ifNotNil: [:bool | self isCompositeSearch: bool].
 	self assert: stream atEnd.
-	self
-		outputText: spec second;
-		inputsText: spec first.
+	
+	self flag: #workaround. "We should be able to use #outputText:/#inputsText: here, but without a requestor, the compiler cannot access the bindings"
+	(self dependentTextPaneWithSelector: #outputText) in: [:m |
+		m handleEdit:
+			[self outputText: spec second requestor: m].
+		self changed: #outputText].
+	(self dependentTextPaneWithSelector: #inputsText) in: [:m |
+		m handleEdit:
+			[self inputsText: spec first requestor: m].
+		self changed: #inputsText].
