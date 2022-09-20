@@ -22,9 +22,11 @@ benchmarkSimulators
 		at: #Simulator put: [:block | Simulator evaluate: block];
 		at: #TestSimulatorAllCapabilities put: [:block | TestSimulatorAllCapabilities evaluate: block];
 		at: #TestSimulatorUnoptimized put: [:block | TestSimulatorUnoptimized evaluate: block];
-		at: #Sandbox put: [:block | Sandbox evaluate: block];
-		at: #Sandbox2 put: [:block | Sandbox2 evaluate: block];
 		at: #MessageSendRecorderSimulator put: [:block | MessageSendRecorderSimulator evaluate: block];
 		yourself.
+	(Smalltalk classNamed: #Sandbox) ifNotNil: [:sandboxClass |
+		simulatorBlocks at: #Sandbox put: [:block | sandboxClass evaluate: block]].
+	(Smalltalk classNamed: #Sandbox2) ifNotNil: [:sandbox2Class |
+		simulatorBlocks at: #Sandbox2 put: [:block | sandbox2Class evaluate: block]].	
 	
 	^ self selectBenchmark: workloads with: simulatorBlocks

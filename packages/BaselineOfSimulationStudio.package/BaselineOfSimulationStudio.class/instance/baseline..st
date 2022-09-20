@@ -14,7 +14,7 @@ baseline: spec
 			package: 'SimulationStudio-Sandbox' with: [
 				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Support' with: [
-				spec requires: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
+				spec requires: #('SimulationStudio-Base')];
 			package: 'SimulationStudio-Tools' with: [
 				spec requires: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
 			package: 'SimulationStudio-Tracing' with: [
