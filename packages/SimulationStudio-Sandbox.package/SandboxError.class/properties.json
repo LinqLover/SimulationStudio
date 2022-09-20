@@ -10,5 +10,5 @@
 	"name" : "SandboxError",
 	"pools" : [
 		 ],
-	"super" : "SimulationError",
+	"super" : "AnObsoleteSimulationError",
 	"type" : "normal" }

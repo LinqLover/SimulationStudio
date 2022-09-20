@@ -39,8 +39,8 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[79 "primitiveNewMethod"] -> [
 				selector := #context:doPrimitiveNew:receiver:args:.
 				accessIndirectors at: 1 put: #readableObjectFor:].
-			[85 "primitiveSignal"] -> [accessIndirectors at: 1 put: #writableObjectFor: "External processes will not be signaled"].
-			[86 "primitiveWait"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
+			[85 "primitiveSignal"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
+			[86 "primitiveWait"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[87 "primitiveResume"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[88 "primitiveSuspend"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[89 "primitiveFlushCache"] -> [self flag: #shouldBeImplemented].
@@ -56,9 +56,6 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[103 "primitiveScanCharacters"] -> [accessIndirectors at: 1 put: #writableObjectFor:].
 			[105 "primitiveStringReplace"] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].
 			[106 "primitiveScreenSize"] -> ["allowed"].
-			[107 "primitiveMouseButtons"] -> ["allowed"].
-			[108 "primitiveKbdNext"] -> [^ self context: aContext activateOperationForbidden: 'primitiveKbdNext is disabled in sandbox simulation'].
-			[109 "primitiveKbdPeek"] -> ["allowed"].
 			[110 "primitiveIdentical"] -> [accessIndirectors
 				atLast: 2 put: #readableObjectFor:;
 				atLast: 1 put: #readableObjectFor:].
@@ -137,11 +134,11 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[181 "primitiveSizeInBytesOfInstance"] -> ["allowed"].
 			[182 "primitiveSizeInBytes"] -> [
 				self flag: #shouldBeImplemented.
-				^ self activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].
+				^ self context: aContext activateOperationForbidden: 'primitiveSizeInBytesOfInstance is disabled in sandbox simulation'].
 			[183 "primitiveIsPinned"] -> [^ self context: aContext activateOperationForbidden: 'Pinning primitives are disabled in sandbox simulation'].
 			[184 "primitivePin"] -> [
 				self flag: #forLater. "We could simulate that, too. Maybe interesting for TelegramSmalltalkSession?"
-				^ self activateOperationForbidden: 'Pinning primitives are disabled in sandbox simulation'].
+				^ self context: aContext activateOperationForbidden: 'Pinning primitives are disabled in sandbox simulation'].
 			[185 "primitiveExitCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
 			[186 "primitiveEnterCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
 			[187 "primitiveTestAndSetOwnershipOfCriticalSection"] -> [^ self context: aContext activateOperationForbidden: 'Critical section primitives are disabled in sandbox simulation'].
@@ -189,12 +186,14 @@ context: aContext doPrimitive: primitiveIndex method: aCompiledMethod receiver: 
 			[247 "primitiveSnapshotEmbedded"] -> [^ self context: aContext activateOperationForbidden: 'primitiveSnapshotEmbedded is disabled in sandbox simulation'].
 			[248 "primitiveArrayBecomeOneWayNoCopyHash"] -> [
 				^ self context: aContext elements: receiver forwardIdentityTo: arguments first].
-			[249 "primitiveArrayBecomeOneWayCopyHash"] -> [
+			[249 "primitiveArrayBecomeOneWayCopyHashArg"] -> [
 				^ self context: aContext elements: receiver forwardIdentityTo: arguments first copyHash: arguments second].
+			[568 "primitiveSuspendBackingUpV1"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 			[570 "primitiveFlushExternalPrimitives"] -> [^ self context: aContext activateOperationForbidden: 'primitiveFlushExternalPrimitives is disabled in sandbox simulation'].
 			[571 "primitiveUnloadModule"] -> [^ self context: aContext activateOperationForbidden: 'primitiveUnloadModule is disabled in sandbox simulation'].
 			[572 "primitiveListBuiltinModule"] -> ["allowed"].
 			[573 "primitiveListExternalModule"] -> ["allowed"].
+			[578 "primitiveSuspendBackingUpV2"] -> [^ self context: aContext activateOperationForbidden: 'Control primitives are disabled in sandbox simulation'].
 		}
 		otherwise: [
 			(primitiveIndex >= 250 and: [primitiveIndex <= 254]) "VM implementor primitives"

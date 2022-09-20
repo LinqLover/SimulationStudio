@@ -1,8 +1,17 @@
 private - object access
-elements: anArray forwardIdentityTo: otherArray copyHash: copyHash
+elements: anArray forwardIdentityTo: anotherArray copyHash: copyHash
 
+	(self objectClass: anArray) == Array ifFalse: [
+		^ self class primitiveFailTokenFor: #'bad argument'].
+	(self objectClass: anotherArray) == Array ifFalse: [
+		^ self class primitiveFailTokenFor: #'bad argument'].
+	(self objectClass: copyHash) simIsBooleanClass ifFalse: [
+		^ self class primitiveFailTokenFor: #'bad argument'].
+	(self objectSize: anArray) = (self objectSize: anotherArray) ifFalse: [
+		^ self class primitiveFailTokenFor: #'bad argument'].
+	
 	anArray do: [:object |
-		(sandbox readableObjectFor: object) isReadOnlyObject
+		(self simObjectIsReadOnly: (sandbox readableObjectFor: object))
 			ifTrue: [^ self class primitiveFailTokenFor: #'no modification']].
 	
-	self push: (sandbox elements: anArray forwardIdentityTo: otherArray copyHash: copyHash).
+	self push: (sandbox elements: anArray forwardIdentityTo: anotherArray copyHash: copyHash).
