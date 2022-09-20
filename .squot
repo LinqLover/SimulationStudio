@@ -3,6 +3,7 @@ OrderedDictionary {
 	'packages/SimulationStudio-Base.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Sandbox.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Support.package' : #SquotCypressCodeSerializer,
+	'packages/SimulationStudio-Tools.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Tracing.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Tests-Base.package' : #SquotCypressCodeSerializer,
 	'packages/SimulationStudio-Tests-Support.package' : #SquotCypressCodeSerializer,

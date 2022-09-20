@@ -15,18 +15,20 @@ baseline: spec
 				spec requires: 'SimulationStudio-Base'];
 			package: 'SimulationStudio-Support' with: [
 				spec requires: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
+			package: 'SimulationStudio-Tools' with: [
+				spec requires: #('SimulationStudio-Base' 'SimulationStudio-Sandbox')];
 			package: 'SimulationStudio-Tracing' with: [
 				spec requires: #('SimulationStudio-Base' 'MessageSendRecorder')].
 		"test packages"
 		spec
 			package: 'SimulationStudio-Tests-Base' with: [
 				spec requires: 'SimulationStudio-Base'];
-			package: 'SimulationStudio-Tests-Support' with: [
-				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
 			package: 'SimulationStudio-Tests-Sandbox' with: [
-				spec requires: #('SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tests-Base')].
+				spec requires: #('SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tests-Base')];
+			package: 'SimulationStudio-Tests-Support' with: [
+				spec requires: #('SimulationStudio-Support' 'SimulationStudio-Tests-Base')].
 		
 		"groups"
 		spec
-			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support');
+			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support');
 			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support')].
