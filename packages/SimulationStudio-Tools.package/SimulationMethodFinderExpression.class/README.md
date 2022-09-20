@@ -1,0 +1,1 @@
+I represent an expression that was constructed by a SimulationMethodFinder. I'm like a MessageSend but can also store the resulting value.

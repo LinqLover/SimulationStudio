@@ -1,0 +1,4 @@
+accessing
+outerSuperclass
+
+	^ finder outerSuperclass

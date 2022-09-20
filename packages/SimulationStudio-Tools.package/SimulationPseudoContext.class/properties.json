@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tools-MethodFinder",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ct 9/20/2022 09:34",
+	"instvars" : [
+		"temporaries" ],
+	"name" : "SimulationPseudoContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

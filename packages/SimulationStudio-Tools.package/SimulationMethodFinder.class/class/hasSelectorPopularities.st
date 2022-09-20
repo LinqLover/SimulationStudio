@@ -1,0 +1,4 @@
+support
+hasSelectorPopularities
+
+	^ SelectorPopularities notNil

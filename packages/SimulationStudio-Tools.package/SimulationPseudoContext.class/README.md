@@ -1,0 +1,1 @@
+I'm a stub class that mocks a DoItContext for evaluating code in a sandbox. I'm a workaround that is only necessary as long as real Context instances cannot be accessed from within a sandbox because their methodMap is protected with a mutex, and sandboxes cannot handle mutexes at the moment.
