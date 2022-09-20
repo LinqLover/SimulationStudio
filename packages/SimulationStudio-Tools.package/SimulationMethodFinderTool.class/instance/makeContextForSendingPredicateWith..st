@@ -1,0 +1,4 @@
+private
+makeContextForSendingPredicateWith: messageSend
+
+	^ thisContext

@@ -1,0 +1,19 @@
+{
+	"category" : "SimulationStudio-Tools-MethodFinder",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SelectorPopularities" ],
+	"commentStamp" : "ct 9/20/2022 19:21",
+	"instvars" : [
+		"finder",
+		"inputsText",
+		"outputText",
+		"bindings",
+		"backgroundProcess",
+		"resultQueue" ],
+	"name" : "SimulationMethodFinderTool",
+	"pools" : [
+		 ],
+	"super" : "MessageSet",
+	"type" : "normal" }

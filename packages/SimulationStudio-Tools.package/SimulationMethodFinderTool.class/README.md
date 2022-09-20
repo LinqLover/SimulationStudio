@@ -1,0 +1,1 @@
+I provide the user interface for a SimulationMethodFinder. I'm a very rough complement of Squeak's traditional SelectorBrowser, but offer more configuration options, run searches asynchronously, and display results incrementally together with some progress indication.

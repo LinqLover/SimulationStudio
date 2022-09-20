@@ -6,9 +6,7 @@
 		"evaluate:" : "ct 11/13/2021 16:12",
 		"evaluate:ifFailed:" : "ct 11/13/2021 16:12",
 		"evaluate:on:do:" : "ct 11/13/2021 16:12",
-		"findSelectorsFor:arguments:thatAnswer:" : "ct 11/13/2021 16:11",
-		"fromMemory:" : "ct 3/6/2021 01:39",
-		"streamSelectorsFor:arguments:thatAnswer:" : "ct 11/13/2021 16:11" },
+		"fromMemory:" : "ct 3/6/2021 01:39" },
 	"instance" : {
 		"access:indirectors:" : "ct 11/12/2021 23:58",
 		"addObject:" : "ct 3/22/2021 17:51",

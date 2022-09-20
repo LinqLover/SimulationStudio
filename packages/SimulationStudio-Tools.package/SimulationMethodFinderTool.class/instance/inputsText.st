@@ -1,0 +1,4 @@
+accessing
+inputsText
+
+	^ inputsText

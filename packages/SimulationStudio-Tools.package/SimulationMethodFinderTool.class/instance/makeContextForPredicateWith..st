@@ -1,0 +1,4 @@
+private
+makeContextForPredicateWith: answer
+
+	^ thisContext

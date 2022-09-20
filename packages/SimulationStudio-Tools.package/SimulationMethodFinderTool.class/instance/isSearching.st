@@ -1,0 +1,4 @@
+testing
+isSearching
+
+	^ backgroundProcess notNil

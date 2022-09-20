@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"leaf:" : "ct 9/18/2022 21:08",
+		"selector:receiver:arguments:" : "ct 9/19/2022 18:36" },
+	"instance" : {
+		"arguments" : "ct 9/18/2022 21:20",
+		"arguments:" : "ct 9/18/2022 21:12",
+		"compiledMethod" : "ct 9/18/2022 21:18",
+		"isLeaf" : "ct 9/18/2022 21:23",
+		"methodReference" : "ct 9/19/2022 20:14",
+		"printOn:" : "ct 9/19/2022 21:34",
+		"printReceiverOrArgument:on:" : "ct 9/19/2022 21:35",
+		"receiver" : "ct 9/18/2022 21:17",
+		"receiver:" : "ct 9/18/2022 21:12",
+		"selector" : "ct 9/18/2022 21:14",
+		"selector:" : "ct 9/18/2022 21:12",
+		"value" : "ct 9/18/2022 21:09",
+		"value:" : "ct 9/18/2022 21:08",
+		"valueClass" : "ct 9/18/2022 21:17",
+		"withValue:" : "ct 9/19/2022 18:37" } }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classUnderTest" : "ct 9/19/2022 22:22",
+		"matches:spec:" : "ct 9/18/2022 21:25",
+		"testFindComposite" : "ct 9/20/2022 19:06",
+		"testFindPredicate" : "ct 9/20/2022 19:06",
+		"testFindSendingPredicate" : "ct 9/20/2022 19:06",
+		"testFindValue" : "ct 9/20/2022 19:07",
+		"testFindValueBlock" : "ct 9/20/2022 19:06",
+		"testMethodFinder:limit:shouldFind:" : "ct 9/20/2022 19:03",
+		"testMethodFinder:limit:shouldFind:butNotFind:" : "ct 9/20/2022 19:04",
+		"testMethodFinder:shouldFind:" : "ct 9/20/2022 19:07",
+		"testMethodFinder:shouldFind:butNotFind:" : "ct 9/20/2022 19:07" } }

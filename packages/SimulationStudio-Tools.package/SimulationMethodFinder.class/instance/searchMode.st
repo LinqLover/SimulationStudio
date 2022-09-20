@@ -1,0 +1,4 @@
+accessing
+searchMode
+
+	^ searchMode

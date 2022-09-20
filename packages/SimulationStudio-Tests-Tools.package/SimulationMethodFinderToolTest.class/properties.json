@@ -1,0 +1,15 @@
+{
+	"category" : "SimulationStudio-Tests-Tools-MethodFinder",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"finder",
+		"window" ],
+	"name" : "SimulationMethodFinderToolTest",
+	"pools" : [
+		 ],
+	"super" : "SimulationTestCase",
+	"type" : "normal" }
