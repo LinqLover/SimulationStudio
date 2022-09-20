@@ -2,8 +2,6 @@ tests
 testSubclass
 
 	| name |
-	self fail: #forLater. "Currently, simulation of subclassing will crash the VM. See: http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-December/217860.html"
-	
 	name := #SandboxTestClass , UUID new asString asLegalSelector asCamelCase.
 	
 	self shouldnt: (Smalltalk hasClassNamed: name).
@@ -25,6 +23,6 @@ testSubclass
 			
 			class compile: 'foo ^ ' , self selector printString.
 			
-			self assert: self selector printString equals: instance foo]].
+			self assert: self selector equals: instance foo]].
 	
 	self deny: (Smalltalk hasClassNamed: name).
