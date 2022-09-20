@@ -57,6 +57,7 @@ For more technical details, also read these announcement threads on the squeak-d
 
 - [[ANN] SimulationStudio and sandboxed execution for Squeak](http://forum.world.st/ANN-SimulationStudio-and-sandboxed-execution-for-Squeak-td5127804.html)
 - [News from SimulationStudio](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-November/216964.html)
+- [[ANN] News from SimulationStudio: Method Finder 2](https://lists.squeakfoundation.org/pipermail/squeak-dev/2022-September/222244.html)
 
 ## Installation
 
@@ -82,6 +83,14 @@ spec baseline: 'SimulationStudio' with: [
 		repository: 'github://LinqLover/SimulationStudio/packages';
 		loads: 'SimulationStudio-Sandbox'].
 ```
+
+## Users of SimulationStudio
+
+As of today, the following projects make use of SimulationStudio:
+
+- [TelegramSmalltalkBot](https://github.com/LinqLover/TelegramSmalltalkBot)
+- [TraceDebugger](https://github.com/hpi-swa-lab/squeak-tracedebugger)
+- [Sandblocks](https://github.com/hpi-swa/sandblocks)
 
 ## Contribution and bug reports
 
