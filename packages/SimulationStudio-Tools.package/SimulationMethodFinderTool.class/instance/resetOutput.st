@@ -6,4 +6,7 @@ resetOutput
 	finder
 		expectedAnswer: nil;
 		predicate: nil.
-	bindings := self searchMode = #sendingPredicate ifTrue: [bindings ifNil: [Dictionary new]].
+	
+	bindings := externalBindings copy.
+	(self searchMode = #sendingPredicate ifTrue: [bindings]) ifNotNil: [:newBindings |
+		bindings addAll: newBindings].

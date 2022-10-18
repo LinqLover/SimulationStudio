@@ -24,7 +24,7 @@ outputText: aStringOrText requestor: requestor
 					{self pseudoContextForPredicateWith: result}]].
 		[#sendingPredicate] ->
 			[| predicateMethod |
-			bindings := Dictionary new.
+			bindings := externalBindings copy.
 			predicateMethod := self compilerClass new
 				compiledMethodFor: aStringOrText
 				in: self makeContextForSendingPredicate
