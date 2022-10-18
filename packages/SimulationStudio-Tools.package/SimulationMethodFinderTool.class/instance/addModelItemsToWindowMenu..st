@@ -10,4 +10,4 @@ addModelItemsToWindowMenu: menu
 		action: #showTranscripter.
 	
 	menu addLine.
-	Simulator appMenu: menu.
+	SimulatorApp appMenu: menu.

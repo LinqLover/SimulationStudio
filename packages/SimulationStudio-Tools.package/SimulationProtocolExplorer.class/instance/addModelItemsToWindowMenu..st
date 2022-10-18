@@ -4,4 +4,4 @@ addModelItemsToWindowMenu: menu
 	super addModelItemsToWindowMenu: menu.
 	
 	menu addLine.
-	Simulator appMenu: menu.
+	SimulatorApp appMenu: menu.
