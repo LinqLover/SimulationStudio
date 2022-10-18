@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"SelfUpdateBranch" ],
+	"commentStamp" : "ct 10/18/2022 16:24",
+	"instvars" : [
+		 ],
+	"name" : "SimulatorApp",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

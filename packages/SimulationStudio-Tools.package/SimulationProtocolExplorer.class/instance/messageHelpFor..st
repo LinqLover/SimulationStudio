@@ -7,4 +7,4 @@ messageHelpFor: aMessage
 	aMessage hasError ifTrue: [^ nil].
 	^ aMessage hasSideEffects
 		ifFalse: ['pure function call (no side effects)']
-		ifTrue: ['affects global state (has side effects)']
+		ifTrue: ['affects existing state (has side effects)']
