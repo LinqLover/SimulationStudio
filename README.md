@@ -63,19 +63,33 @@ For more technical details, also read these announcement threads on the squeak-d
 
 ### ... using [Metacello](https://github.com/Metacello/metacello)
 
+For the [latest Squeak Trunk](https://files.squeak.org/trunk/):
+
 ```smalltalk
 Metacello new
 	baseline: 'SimulationStudio';
 	githubUser: 'LinqLover' project: 'SimulationStudio' path: 'packages';
+	get;
 	load.
 ```
 
-### ... using [Squot](https://github.com/hpi-swa/Squot)
+LTS (long-time support) version for an [older Squeak release](https://squeak.org/downloads/#:~:text=History):
 
-Open a git browser, clone the repository, and check out the latest commit from the default branch.
-[Learn more](https://github.com/hpi-swa/Squot#getting-started-with-an-existing-remote-project) about using the git browser.
+```smalltalk
+Metacello new
+	baseline: 'SimulationStudio';
+	githubUser: 'LinqLover' project: 'SimulationStudio' commitish: 'squeak60' path: 'packages';
+	get;
+	load.
+```
+
+- Currently supported LTS versions are: `squeak60`
+
+To load a specific package, change the last line, e.g., `load: 'SimulationStudio-Base'`. See the [Metacello docs](https://github.com/Metacello/metacello/blob/master/docs/MetacelloScriptingAPI.md#load-options) for more options.
 
 ### ... as a dependency in your [Metacello baseline](https://github.com/dalehenrich/metacello-work/blob/master/docs/GettingStartedWithGitHub.md#create-baseline)
+
+For the [latest Squeak Trunk](https://files.squeak.org/trunk/):
 
 ```smalltalk
 spec baseline: 'SimulationStudio' with: [
@@ -83,6 +97,24 @@ spec baseline: 'SimulationStudio' with: [
 		repository: 'github://LinqLover/SimulationStudio/packages';
 		loads: 'SimulationStudio-Sandbox'].
 ```
+
+LTS (long-time support) version for an [older Squeak release](https://squeak.org/downloads/#:~:text=History):
+
+```smalltalk
+spec baseline: 'SimulationStudio' with: [
+	spec
+		repository: 'github://LinqLover/SimulationStudio:squeak60/packages';
+		loads: 'SimulationStudio-Sandbox'].
+```
+
+- Currently supported LTS versions are: `squeak60`
+
+Depending on your needs, specify any other package(s) via `loads:`. See the [Metacello docs](https://github.com/Metacello/metacello/blob/master/docs/APIReference.md) for more options.
+
+### ... using [Squot](https://github.com/hpi-swa/Squot)
+
+Open a git browser, clone the repository, and check out the latest commit from the default branch or any LTS branch.
+[Learn more](https://github.com/hpi-swa/Squot#getting-started-with-an-existing-remote-project) about using the git browser.
 
 ## Users of SimulationStudio
 
