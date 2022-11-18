@@ -4,5 +4,5 @@ selfUpdateBranch
 		category: #SimulationStudio
 		description: 'The branch used for installing updates for SimulationStudio from the GitHub repository.'
 		type: #String>
-
-	^ SelfUpdateBranch ifNil: ['master']
+	
+	^ SelfUpdateBranch ifNil: [self defaultSelfUpdateBranch]
