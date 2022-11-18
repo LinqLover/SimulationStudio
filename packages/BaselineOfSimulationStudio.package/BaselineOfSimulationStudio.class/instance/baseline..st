@@ -32,5 +32,6 @@ baseline: spec
 		
 		"groups"
 		spec
-			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools');
+			group: #default with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools');
+			group: #full with: #('SimulationStudio-Base' 'SimulationStudio-Sandbox' 'SimulationStudio-Support' 'SimulationStudio-Tools' 'SimulationStudio-Tracing' 'SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools');
 			group: #tests with: #('SimulationStudio-Tests-Base' 'SimulationStudio-Tests-Sandbox' 'SimulationStudio-Tests-Support' 'SimulationStudio-Tests-Tools')].
