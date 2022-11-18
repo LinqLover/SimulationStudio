@@ -1,4 +1,7 @@
-| name spec packageNames firstPackageNames zip preamble |
+"Generate a SAR file of all relevant packages to install SimulationStudio.
+NOTE: Make sure to run this script in an image of the target Squeak version, e.g., in a Squeak 6.0 image to create a squeak60 SAR file."
+
+| name spec packageNames firstPackageNames zip preamble postscript |
 name := 'SimulationStudio'.
 spec := #('default').
 
@@ -31,4 +34,6 @@ loader := MCVersionLoader new.';
 			cr].
 	preambleStream nextPutAll: 'loader load.'].
 zip addString: preamble as: 'install/preamble'.
+postscript := 'SimulatorApp selfUpdateBranch: {1}.' format: {SimulatorApp selfUpdateBranch printString}.
+zip addString: postscript as: 'install/postscript'.
 zip writeToFileNamed: ('{1}.sar' format: {name}).
