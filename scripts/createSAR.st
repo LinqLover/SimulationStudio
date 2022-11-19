@@ -34,6 +34,6 @@ loader := MCVersionLoader new.';
 			cr].
 	preambleStream nextPutAll: 'loader load.'].
 zip addString: preamble as: 'install/preamble'.
-postscript := 'SimulatorApp selfUpdateBranch: {1}.' format: {SimulatorApp selfUpdateBranch printString}.
+postscript := 'SimulatorApp basicSelfUpdateBranch: {1}.' format: {SimulatorApp selfUpdateBranch printString}.
 zip addString: postscript as: 'install/postscript'.
 zip writeToFileNamed: ('{1}.sar' format: {name}).
