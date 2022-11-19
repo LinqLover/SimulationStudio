@@ -1,4 +1,4 @@
-I execute code a sandbox environment aiming, to isolate all side effects and keeping them apart from the rest of the image.
+I execute code a sandbox environment, aiming to isolate all side effects and keeping them apart from the rest of the image.
 
 ---
 ## VERSIONING NOTE
