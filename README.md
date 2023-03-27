@@ -5,6 +5,14 @@
 
 A growing suite of applications and tools using code simulation in [Squeak/Smalltalk](https://squeak.org).
 
+Code simulation is a technique in Squeak that reproduces the original VM interpreter for Smalltalk in the userland (i.e., implements it in itself), making the exploration and manipulation of its implementation much more immediate and enjoyable.
+The foundation of this project is to extend the default code simulator with the ability to *control* and *modify* the execution.
+For instance, we can disallow certain instructions, implement virtualization features by redirecting memory accesses, or trace the entire execution of a program (similar to bytecode instrumentation).
+As one example, SimulationStudio implements a sandbox that can safely execute any code isolated from the remaining VM image.
+On top of the sandbox, this repository also provides several tools that use *speculative code execution* to offer new ways for exploring objects and classes based on their behavior.
+
+For usage instructions, see the [installation](#installation) section below.
+
 ## Included packages
 
 ### `SimulationStudio-Base`
@@ -60,6 +68,10 @@ For more technical details, also read these announcement threads on the squeak-d
 - [[ANN] News from SimulationStudio: Method Finder 2](https://lists.squeakfoundation.org/pipermail/squeak-dev/2022-September/222244.html)
 
 ## Installation
+
+### ... as a precompiled bundle *(recommended for most visitors)*
+
+Download the archived bundle from the [latest release](https://github.com/LinqLover/SimulationStudio/releases/tag/squeak61alpha-20230328-0018) and follow the instructions to open it. In the image, you will find further usage examples. Using the bundle is also the recommended way to browse the sources of the project.
 
 ### ... using [Metacello](https://github.com/Metacello/metacello)
 
