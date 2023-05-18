@@ -1,0 +1,14 @@
+{
+	"category" : "SimulationStudio-Tools-Coverage",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"coverage" ],
+	"name" : "MessageSetForCoverage",
+	"pools" : [
+		 ],
+	"super" : "MessageTrace",
+	"type" : "normal" }

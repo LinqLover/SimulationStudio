@@ -1,4 +1,4 @@
-as yet unclassified
+documentation
 example
 
 	(CoverageSimulator new

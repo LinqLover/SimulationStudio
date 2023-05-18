@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"for:messageList:name:" : "ct 12/28/2022 22:21",
+		"openFor:messageList:name:" : "ct 12/28/2022 22:21",
+		"useUnifiedMessageLabels" : "ct 12/28/2022 22:30" },
+	"instance" : {
+		"contents" : "ct 12/28/2022 22:40",
+		"contentsSymbolQuints" : "ct 12/28/2022 22:45",
+		"coverage" : "ct 12/28/2022 22:15",
+		"coverage:" : "ct 12/28/2022 22:15",
+		"coverageByteCodesContents" : "ct 12/28/2022 22:41",
+		"coverageSourceContents" : "ct 12/28/2022 22:41",
+		"initialize" : "ct 12/28/2022 22:38",
+		"initializeMessageList:" : "ct 12/28/2022 22:52",
+		"showingCoverageByteCodes" : "ct 12/28/2022 22:45",
+		"showingCoverageByteCodesString" : "ct 5/18/2023 15:17",
+		"showingCoverageSource" : "ct 12/28/2022 22:39",
+		"showingCoverageSourceString" : "ct 5/18/2023 15:17",
+		"toggleCoverageByteCodes" : "ct 5/18/2023 15:17",
+		"toggleCoverageSource" : "ct 5/18/2023 15:16" } }

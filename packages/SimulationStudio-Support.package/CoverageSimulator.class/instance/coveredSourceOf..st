@@ -4,8 +4,8 @@ coveredSourceOf: aCompiledCode
 	| map source |
 	source := aCompiledCode getSource asText copy.
 	map := aCompiledCode debuggerMap.
-	((self coveredPCsIn: aCompiledCode) collect: [:pc | pc -> true])
-		, ((self uncoveredPCsIn: aCompiledCode) collect: [:pc | pc -> false])
+	((self uncoveredPCsIn: aCompiledCode) collect: [:pc | pc -> false])
+		, ((self coveredPCsIn: aCompiledCode) collect: [:pc | pc -> true]) asArray
 		do: [:assoc | | pc covered range |
 			pc := assoc key.
 			covered := assoc value.
