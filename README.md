@@ -53,6 +53,10 @@ Contains some programming tools that are implementation using simulation:
 
   [![Protocol Explorer on `DateAndTime now`](https://user-images.githubusercontent.com/38782922/162335500-9ab37f20-d5e5-499a-98ed-a1aa25bad5ed.png)](https://github.com/LinqLover/SimulationStudio/pull/39#issue-1090737789)
 
+- the `CoverageSimulator` also offers a GUI for browsing the branch coverage of methods:
+
+  [![`CoverageSimulator browseFor: [HtmlReadWriterTest suite debug] inClasses: {HtmlReadWriter. String. Text}`](https://user-images.githubusercontent.com/38782922/239919032-1145f08b-5f8f-47f2-8c81-ee470a7d01a0.png)](https://github.com/LinqLover/SimulationStudio/commit/6bcd9c070145609ff779ae251f16a2adce2c1282#commitcomment-114429989)
+
 ### `SimulationStudio-Tracing` (experimental)
 
 Record and browse fine-granular stack traces. Integrates the [MessageSendRecorder](https://github.com/hpi-swa/MessageSendRecorder).
