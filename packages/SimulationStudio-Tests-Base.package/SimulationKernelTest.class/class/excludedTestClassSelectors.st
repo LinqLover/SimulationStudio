@@ -1,0 +1,4 @@
+accessing
+excludedTestClassSelectors
+
+	^ #(testClassComment testUnCategorizedMethods)

@@ -8,13 +8,13 @@ testSelectorsFromGroups: testGroups
 				ifTrue: [Smalltalk classNamed: key]
 				ifFalse: [key].
 			
-			(true
+			((true
 				caseOf: {
 					[selectors isSymbol] -> [
 						(testClass perform: selectors) tests
 							collect: #selector].
 					[selectors size >= 2 and: [selectors first = #-]] -> [
-					| allSelectors |
+						| allSelectors |
 						allSelectors := testClass suite tests collect: #selector as: OrderedCollection.
 						selectors allButFirst withoutDuplicates do: [:selector |
 							allSelectors remove: selector ifAbsent: [
@@ -23,5 +23,6 @@ testSelectorsFromGroups: testGroups
 									Transcript showln: 'Skipping non-existent test '; show: testClass; show: '>>'; show: selector]]].
 							allSelectors]}
 				otherwise: [selectors])
-					collect: [:selector | self testSelectorForClass: testClass selector: selector]
-					thenDo: [:pair | stream nextPut: pair]]]
+					copyWithoutAll: self excludedTestClassSelectors)
+						collect: [:selector | self testSelectorForClass: testClass selector: selector]
+						thenDo: [:pair | stream nextPut: pair]]]

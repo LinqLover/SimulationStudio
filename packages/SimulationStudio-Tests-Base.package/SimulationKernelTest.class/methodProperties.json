@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"excludedTestClassSelectors" : "ct 12/27/2023 20:28",
 		"expectedFailureGroups" : "ct 6/4/2022 00:03",
 		"expectedFailures" : "ct 3/5/2021 17:14",
 		"forClass:selector:" : "ct 12/26/2021 20:45",
@@ -8,7 +9,7 @@
 		"testGroups" : "ct 6/3/2022 20:56",
 		"testSelectorForClass:selector:" : "ct 12/26/2021 20:45",
 		"testSelectors" : "ct 3/5/2021 17:14",
-		"testSelectorsFromGroups:" : "ct 1/7/2022 18:56",
+		"testSelectorsFromGroups:" : "ct 12/27/2023 20:27",
 		"wantsToTest:" : "ct 3/5/2021 16:50" },
 	"instance" : {
 		"basicPerformTest" : "ct 2/12/2022 15:45",
