@@ -4,4 +4,4 @@ testReturnFromBottom
 	| context |
 	context := SimulationContext newFrom: [] asContext.
 	
-	self assert: context step isNil.
+	self assert: (context sender isNil and: [context willReturn]).
