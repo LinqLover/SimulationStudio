@@ -24,7 +24,7 @@ runUntilErrorOrReturnFrom: homeContext
 	^ error
 		ifNil: [
 			"No error was raised, remove ensure context by stepping until popped"
-			[guardEnsure isDead] whileFalse: [ctxt := ctxt stepToCallee].
+			[guardEnsure isDead or: [ctxt isNil]] whileFalse: [ctxt := ctxt stepToCalleeOrNil].
 			{ctxt. nil}]
 		ifNotNil: [
 			"Error was raised, remove inserted above contexts then return signaler context"
