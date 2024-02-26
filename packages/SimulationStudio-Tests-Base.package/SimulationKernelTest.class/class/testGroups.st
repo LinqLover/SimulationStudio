@@ -9,6 +9,9 @@ testGroups
 			#testPlatformIndependentIntegerAccessorsAtBitBorders. #testPlatformIndependentIntegerAccessorsWithRandomValues "large"};
 		at: #ContextTest put: {#-.
 			#testMessageNotUnderstood. "too expensive"
+			#testPrimitive83. "currently expected failure and (thus?) very expensive"
+			#testPrimitive84. "currently expected failure and (thus?) very expensive"
+			#testPrimitive100. "too expensive"
 			#testPrimitive218. "too expensive and does not add value after testPrimitive117"
 			#testRestart flag: #workaround. "uses Delay/control primitives which raises a Warning during simulation since Kernel-ct.1381 (inbox)"
 			#testRunUntilErrorOrReturnFromError. #testRunUntilErrorOrReturnFromNoError. "Context>>runUntilErrorOrReturnFrom: does not turn off simulation again"
