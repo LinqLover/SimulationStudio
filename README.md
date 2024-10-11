@@ -71,6 +71,9 @@ For more technical details, also read these announcement threads on the squeak-d
 - [News from SimulationStudio](http://lists.squeakfoundation.org/pipermail/squeak-dev/2021-November/216964.html)
 - [[ANN] News from SimulationStudio: Method Finder 2](https://lists.squeakfoundation.org/pipermail/squeak-dev/2022-September/222244.html)
 
+There is also a slide deck about the Sandbox and the Simulation Method Finder (German, translation will be provided upon request):
+**[Finden statt Suchen: Der Method-Finder wird abgesichert](https://linqlover.github.io/LinqLover/slides/SqueakEv22%20MethodFinder2-de.pdf) (Don't Search, Find: Securing the MethodFinder). On [*Squeak Meeting 2022*](https://squeak.de/news/2022/10/21/squeak_treffen/), November 19, 2022. Squeak e.V., Potsdam, Germany.**
+
 ## Installation
 
 ### ... as a precompiled bundle *(recommended for most visitors)*
