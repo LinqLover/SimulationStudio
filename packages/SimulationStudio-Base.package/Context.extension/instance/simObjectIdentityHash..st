@@ -6,6 +6,6 @@ simObjectIdentityHash: anObject
 
 	| class |
 	class := self objectClass: anObject.
-	(SmallInteger == class or: [Character == class] or: [SmallFloat64 == class] or: [Metaclass == (self objectClass: class)])
+	(SmallInteger == class or: [Character == class or: [SmallFloat64 == class or: [Metaclass == (self objectClass: class)]]])
 		ifTrue: [^ anObject identityHash].
 	^ self simBasicObjectIdentityHash: anObject
