@@ -1,7 +1,10 @@
 *SimulationStudio-Tools-MethodFinder-printing
 simShortPrintOn: aStream
 
-	"Format as per ANSI 5.8.2.16: [-]D:HH:MM:SS" 	| d h m s |
+	"Format as: [-][[D:]HH:]MM:SS"
+	| d h m s |
+	self flag: #moveUpstream.
+	
 	d := self days abs.
 	h := self hours abs.
 	m := self minutes abs.
