@@ -4,7 +4,8 @@ forMethod: aMethod "<CompiledMethod>"
 	 Answer an existing instance from the cache if it exists, cacheing a new one if required."
 	
 	thisContext isSandboxContext ifTrue:
-		[^ self sandboxedForMethod: aMethod].
+		["avoid mutex, don't use cache"
+		^ self sandboxedForMethod: aMethod].
 	^self protected: [ 
 		MapCache
 			at: aMethod

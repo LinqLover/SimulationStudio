@@ -4,7 +4,8 @@ new
 
 	| newProcess |
 	thisContext isSandboxContext ifTrue:
-		[^ self sandboxedNew].
+		["avoid mutex, don't populate cache"
+		^ self sandboxedNew].
 	newProcess := super new.
 	AllProcessesLock critical: [AllProcesses add: newProcess].
 	^ newProcess

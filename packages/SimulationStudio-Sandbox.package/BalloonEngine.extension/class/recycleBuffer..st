@@ -3,7 +3,8 @@ recycleBuffer: balloonBuffer
 	"Try to keep the buffer for later drawing operations."
 
 	thisContext isSandboxContext ifTrue:
-		[^ self].
+		["avoid mutex, don't recycle"
+		^ self].
 	CacheProtect critical:[ | buffer |
 		buffer := BufferCache at: 1.
 		(buffer isNil or:[buffer size < balloonBuffer size] )
