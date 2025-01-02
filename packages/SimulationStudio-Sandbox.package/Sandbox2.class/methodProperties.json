@@ -48,6 +48,7 @@
 		"importMemory:" : "ct 3/6/2021 01:39",
 		"initialize" : "ct 12/29/2024 21:14",
 		"initializeContext:" : "ct 11/13/2021 00:18",
+		"isSandbox" : "ct 12/29/2024 03:34",
 		"operationForbidden:" : "ct 3/4/2021 23:48",
 		"patchObject:with:" : "ct 3/6/2021 13:25",
 		"readableObjectFor:" : "ct 12/28/2020 21:24",

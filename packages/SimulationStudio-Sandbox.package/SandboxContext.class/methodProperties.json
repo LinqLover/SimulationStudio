@@ -15,6 +15,7 @@
 		"elements:forwardIdentityTo:" : "ct 1/10/2021 21:02",
 		"elements:forwardIdentityTo:copyHash:" : "ct 9/20/2022 17:33",
 		"initializeFrom:" : "ct 3/4/2021 19:27",
+		"isSandboxContext" : "ct 12/29/2024 03:23",
 		"lookupSelector:inClass:" : "ct 12/28/2021 21:56",
 		"operationForbidden:" : "ct 3/4/2021 23:48",
 		"popIntoRemoteTemp:inVectorAt:" : "ct 3/20/2021 17:35",
