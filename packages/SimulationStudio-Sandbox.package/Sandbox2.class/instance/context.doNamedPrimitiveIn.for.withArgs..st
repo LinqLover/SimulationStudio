@@ -30,12 +30,19 @@ context: aContext doNamedPrimitiveIn: aCompiledMethod for: rcvr withArgs: argume
 					writableObject]].
 			[#CroquetPlugin] -> ["allowed"].
 			[#FilePlugin] -> [^ self context: aContext activateOperationForbidden: 'FilePlugin not available in simulation'].
+				"[((aContext object: (self writableObjectFor: rcvr) eqeq: rcvr) ""hasOwnObject"" and:
+					[(#(primitiveFileGetPosition primitiveFileSetPosition primitiveFileRead) includes: primitiveName) or: [(rcvr isKindOf: StandardFileStream) and: [[rcvr isReadOnly] ifError: [false]] and: [#(primitiveFileFlush) includes: primitiveName]]])
+						ifFalse: [^ self context: aContext activateOperationForbidden: ('FilePlugin not available in simulation except for read-only accesses to own objects ({1})' format: {primitiveName})]]."
 			[#FloatArrayPlugin] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].
 			[#Float64ArrayPlugin] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].
 			[#LargeIntegers] -> ["allowed"].
 			[#MiscPrimitivePlugin] -> [^ self context: aContext primitiveFailTokenFor: nil "use image implementation"].
 			[#SimulationStudio] -> ["allowed"].
 			[#UUIDPlugin] -> ["allowed"].
+			[#ZipPlugin] -> [
+				(#('primitiveUpdateGZipCrc32' 'primitiveUpdateAdler32') includes: primitiveName)
+					ifTrue: ["allowed"]
+					ifFalse: ["use image implementation" self context: aContext primitiveFailTokenFor: nil] ].
 			[nil] -> [
 				(#('primitiveHighResClock' 'primitiveUtcWithOffset' 'primitiveUtcWithOffset') includes: primitiveName)
 					ifTrue: ["allowed"]
