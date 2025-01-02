@@ -1,4 +1,4 @@
-app - self-updating
+app - accessing
 githubRepositoryParams
 	"{owner. name. directory}"
 
