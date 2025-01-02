@@ -8,5 +8,5 @@ lookupSelector: aSymbol inClass: aClass
 			simulatedClass: lookupClass
 			compiledMethodAt: aSymbol
 			ifPresent: [:method | ^ method].
-		lookupClass := self readableObjectFor: (thisContext object: lookupClass instVarAt: 1 "superclass")].
+		lookupClass := self readableObjectFor: (Mirror object: lookupClass instVarAt: 1 "superclass")].
 	^ nil

@@ -30,7 +30,7 @@
 		"context:pushReceiverVariable:do:" : "ct 11/13/2021 00:44",
 		"context:pushRemoteTemp:inVectorAt:do:" : "ct 11/13/2021 00:44",
 		"context:runSimulated:contextAtEachStep:do:" : "ct 11/13/2021 00:35",
-		"context:simulatedClass:compiledMethodAt:ifPresent:" : "ct 12/29/2021 01:57",
+		"context:simulatedClass:compiledMethodAt:ifPresent:" : "ct 1/2/2025 03:44",
 		"context:simulatedObject:basicAt:" : "ct 11/13/2021 00:22",
 		"context:simulatedObject:basicAt:put:" : "ct 11/13/2021 00:22",
 		"context:simulatedObject:instVarAt:" : "ct 11/13/2021 00:22",
@@ -58,4 +58,4 @@
 		"stepLimit" : "ct 3/5/2021 23:27",
 		"stepLimit:" : "ct 3/5/2021 23:27",
 		"valueIndex" : "ct 11/12/2021 23:34",
-		"writableObjectFor:" : "ct 6/18/2022 03:14" } }
+		"writableObjectFor:" : "ct 1/2/2025 03:44" } }
