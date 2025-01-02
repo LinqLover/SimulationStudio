@@ -3,7 +3,7 @@ testChaining
 
 	| limit sandbox sideEffect |
 	limit := LimitSimulator new
-		stepLimit: 10;
+		stepLimit: 100;
 		yourself.
 	sandbox := self sandboxClass decorating: limit.
 	

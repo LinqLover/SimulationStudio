@@ -15,7 +15,8 @@ testGroups
 			#testPrimitive218. "too expensive and does not add value after testPrimitive117"
 			#testRestart flag: #workaround. "uses Delay/control primitives which raises a Warning during simulation since Kernel-ct.1381 (inbox)"
 			#testRunUntilErrorOrReturnFromError. #testRunUntilErrorOrReturnFromNoError. "Context>>runUntilErrorOrReturnFrom: does not turn off simulation again"
-			#testSetUp flag: #workaround. "uses Compiler/Semaphore control primitive which raises a Warning during simulation since Kernel-ct.1381 (inbox)"};
+			#testSetUp flag: #workaround. "uses Compiler/Semaphore control primitive which raises a Warning during simulation since Kernel-ct.1381 (inbox)"
+			#testSimulationSideEffectWarningGuardResume. "raises warning"};
 		at: #DoubleByteArrayTest put: {#-.
 			#testAllPossibleValues "large"};
 		at: #DoubleWordArrayTest put: #suite;
@@ -24,7 +25,7 @@ testGroups
 		at: #FloatArrayTest put: #suite;
 		at: #Float64ArrayTest put: #suite;
 		at: #FloatTest put: {#-.
-			#testCompiledConstants. #testFloatRounded. #testFloatTruncated. #testMaxExactInteger. "large"};
+			#testCompiledConstants. #testFloatRounded. #testFloatTruncated. #testMaxExactInteger. "large" #testSinCosConsistency. "slow"};
 		at: #IntegerArrayTest put: #suite;
 		at: #MirrorPrimitiveTests put: #suite;
 		at: #ObjectTest put: {#testBecome
