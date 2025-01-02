@@ -1,0 +1,6 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "ct 1/2/2025 04:32" },
+	"instance" : {
+		"expectedFailures" : "ct 1/2/2025 23:07",
+		"sandboxClass" : "ct 1/2/2025 04:31" } }

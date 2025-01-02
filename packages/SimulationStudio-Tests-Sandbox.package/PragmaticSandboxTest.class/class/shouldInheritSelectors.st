@@ -1,0 +1,4 @@
+testing
+shouldInheritSelectors
+
+	^ self = PragmaticSandboxTest

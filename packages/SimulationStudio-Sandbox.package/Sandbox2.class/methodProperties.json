@@ -5,7 +5,7 @@
 		"disableLoggingAndNotifyingDuringCompilation:" : "ct 12/29/2021 02:00",
 		"evaluate:" : "ct 11/13/2021 16:12",
 		"evaluate:ifFailed:" : "ct 11/13/2021 16:12",
-		"evaluate:on:do:" : "ct 11/13/2021 16:12",
+		"evaluate:on:do:" : "ct 1/2/2025 04:39",
 		"fromMemory:" : "ct 3/6/2021 01:39",
 		"initialize" : "ct 12/29/2024 21:14" },
 	"instance" : {
@@ -44,6 +44,7 @@
 		"evaluate:ifFailed:" : "ct 11/13/2021 16:12",
 		"evaluate:on:do:" : "ct 11/13/2021 16:12",
 		"exportMemory" : "ct 3/6/2021 01:38",
+		"hasModifiedObject:" : "ct 1/2/2025 04:49",
 		"hashFor:" : "ct 1/10/2021 21:40",
 		"importMemory:" : "ct 3/6/2021 01:39",
 		"initialize" : "ct 12/29/2024 21:14",
