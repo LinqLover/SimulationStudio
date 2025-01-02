@@ -7,8 +7,9 @@ buildMessageList: builder
 		icon: #messageIconAtRow:atColumn:;
 		helpItem: #messageHelpAtRow:;
 		menu: #messageMenu:shifted:;
+		keyPress: #messageKey:from:;
 		getIndex: #selectedMessageIndex;
 		setIndex: #selectedMessageIndex:;
-		doubleClick: #inspectSelectedMessage;
+		doubleClick: #openSelectedMessage;
 		columnResizings: #(shrinkWrap spaceFill);
 		yourself
