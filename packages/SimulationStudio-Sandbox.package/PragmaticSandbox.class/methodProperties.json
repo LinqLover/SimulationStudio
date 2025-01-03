@@ -17,7 +17,6 @@
 		"doDateAndTime:perform:context:" : "ct 1/2/2025 04:49",
 		"doEnvironmentAllClasses:context:" : "ct 1/2/2025 22:44",
 		"doEnvironmentClassNames:context:" : "ct 1/2/2025 22:45",
-		"doFormAsDataUrl:context:" : "ct 1/2/2025 04:49",
 		"doRemoteStringText:" : "ct 1/2/2025 22:44",
 		"doString:includesSubstring:context:" : "ct 1/2/2025 04:49",
 		"doStringAsLowercase:" : "ct 1/2/2025 22:45",
