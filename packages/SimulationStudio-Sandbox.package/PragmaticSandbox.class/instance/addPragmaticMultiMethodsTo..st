@@ -15,7 +15,6 @@ addPragmaticMultiMethodsTo: pragmaticMethods
 							ifNil: [self warn: ('pragmatic method not found: {1}>>{2}' format: {class. selector})]
 							ifNotNil: [:method |
 								pragmaticMethods
-									at: method 
-										ifPresent: [self warn: ('pragmatic method overridden: {1}' format: {method})];
-									at: method
-										put: {pragma selector}]]]].
+									at: method ifPresent: [:old |
+										self warn: ('pragmatic method overridden: {1}' format: {method})];
+									at: method put: {pragma selector}]]]].

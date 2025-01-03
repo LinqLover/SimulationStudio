@@ -9,7 +9,6 @@ addPragmaticClassesTo: pragmaticClasses
 				ifNil: [self warn: ('pragmatic class not found: {1}' format: {className})]
 				ifNotNil: [:class |
 					pragmaticClasses
-						at: class
-							ifPresent: [self warn: ('pragmatic class overridden: {1}' format: {class})];
-						at: class
-							put: pragma selector]].
+						at: class ifPresent: [:old |
+							self warn: ('pragmatic class overridden: {1}' format: {class})];
+						at: class put: pragma selector]].
