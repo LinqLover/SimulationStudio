@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"doMorphOpenInWorld:context:" : "ct 1/3/2025 01:32",
+		"doObjectInspect:perform:context:" : "ct 1/3/2025 01:32",
+		"doToolSetBrowse:perform:args:context:" : "ct 1/3/2025 01:35",
+		"pragmatic:forbidden:" : "ct 1/3/2025 01:31",
+		"pragmaticForbidden:" : "ct 1/3/2025 01:27" } }

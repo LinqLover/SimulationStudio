@@ -26,4 +26,6 @@ context: aContext activateMethod: aCompiledMethod withArgs: arguments receiver: 
 		self perform: selector withArguments: args]
 			on: Error do:
 				[^ super context: aContext activateMethod: aCompiledMethod withArgs: arguments receiver: receiver do: aBlock].
-	^ aContext push: result
+	^ (aContext isPrimFailToken: result)
+		ifTrue: [result second value]
+		ifFalse: [aContext push: result]

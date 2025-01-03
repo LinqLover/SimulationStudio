@@ -1,0 +1,1 @@
+I am a more restrictive version of the pragmatic sandbox. I explicitly disallow common headful operations that should typically not be done in headless environments.
