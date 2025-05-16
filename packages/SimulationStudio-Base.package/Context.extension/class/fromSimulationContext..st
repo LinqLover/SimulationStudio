@@ -6,7 +6,6 @@ fromSimulationContext: aContext
 	newContext
 		setSender: aContext sender
 		receiver: aContext receiver
-		method: aContext method
 		closure: aContext closure
 		startpc: aContext pc.
 	newContext stackPtr timesRepeat: [newContext pop].
