@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"context:activateMethod:withArgs:receiver:do:" : "ct 3/21/2022 23:08",
+		"context:doPrimitive:method:receiver:args:do:" : "ct 3/21/2022 23:14",
+		"context:popIntoReceiverVariable:do:" : "ct 3/21/2022 22:46",
+		"context:popIntoTemporaryVariable:do:" : "ct 3/21/2022 22:46",
+		"context:send:super:numArgs:do:" : "ct 3/21/2022 23:29",
+		"context:sendSpecial:numArgs:do:" : "ct 3/21/2022 23:24",
+		"context:storeIntoReceiverVariable:do:" : "ct 3/21/2022 22:41",
+		"context:storeIntoTemporaryVariable:do:" : "ct 3/21/2022 22:43",
+		"tracking:fromArgAt:in:" : "ct 3/21/2022 22:59",
+		"tracking:fromInstVarAt:in:" : "ct 3/21/2022 22:35",
+		"tracking:fromTempVarAt:in:" : "ct 3/21/2022 22:34",
+		"trackingReceiver:in:" : "ct 3/21/2022 22:55" } }
