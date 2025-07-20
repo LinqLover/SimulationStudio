@@ -137,11 +137,13 @@ Open a git browser, clone the repository, and check out the latest commit from t
 
 ## Users of SimulationStudio
 
-As of today, the following projects make use of SimulationStudio:
+As of today, the following projects are known make use of SimulationStudio:
 
 - [TelegramSmalltalkBot](https://github.com/LinqLover/TelegramSmalltalkBot)
 - [TraceDebugger](https://github.com/hpi-swa-lab/squeak-tracedebugger)
 - [Sandblocks](https://github.com/hpi-swa/sandblocks)
+- [SemanticSqueak](https://github.com/hpi-swa-lab/SemanticSqueak)
+- [OOPSIE](https://github.dev/hpi-swa-teaching/osvm-oopsie)
 
 ## Contribution and bug reports
 
