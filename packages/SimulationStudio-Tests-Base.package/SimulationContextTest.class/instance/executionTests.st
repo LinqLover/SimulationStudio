@@ -1,5 +1,5 @@
 execution tests
 executionTests
 
-	^ (self class allMethodsInCategory: 'execution tests')
+	^ (self class allSelectorsInCategory: 'execution tests')
 		copyWithout: thisContext selector
