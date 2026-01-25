@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"for:" : "ct 3/21/2022 22:24",
+		"tracking:from:argAt:" : "ct 3/21/2022 22:54",
+		"tracking:from:instVarAt:" : "ct 3/21/2022 22:33",
+		"tracking:from:tempVarAt:" : "ct 3/21/2022 22:26",
+		"trackingReceiver:from:" : "ct 3/21/2022 22:57" },
+	"instance" : {
+		"doesNotUnderstand:" : "ct 3/21/2022 22:26",
+		"trackingFrom:argAt:" : "ct 3/21/2022 22:53",
+		"trackingFrom:instVarAt:" : "ct 3/21/2022 22:35",
+		"trackingFrom:tempVarAt:" : "ct 3/21/2022 22:34",
+		"trackingReceiverFrom:" : "ct 3/21/2022 22:55",
+		"untracking" : "ct 3/21/2022 23:04",
+		"xxxcopy" : "ct 3/21/2022 22:28",
+		"xxxpostCopy" : "ct 3/21/2022 22:29",
+		"xxxshallowCopy" : "ct 3/21/2022 22:28",
+		"xxxtrackFrom:argAt:" : "ct 3/21/2022 22:53",
+		"xxxtrackFrom:instVarAt:" : "ct 3/21/2022 22:36",
+		"xxxtrackFrom:tempVarAt:" : "ct 3/21/2022 22:35",
+		"xxxtrackReceiverFrom:" : "ct 3/21/2022 22:56",
+		"xxxtrackedObject" : "ct 3/21/2022 22:24",
+		"xxxtrackedObject:" : "ct 3/21/2022 22:25" } }
