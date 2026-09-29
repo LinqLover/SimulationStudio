@@ -113,7 +113,7 @@ For the [latest Squeak Trunk](https://files.squeak.org/trunk/):
 ```smalltalk
 spec baseline: 'SimulationStudio' with: [
 	spec
-		repository: 'github://LinqLover/SimulationStudio/packages';
+		repository: 'github://LinqLover/SimulationStudio';
 		loads: 'SimulationStudio-Sandbox'].
 ```
 
